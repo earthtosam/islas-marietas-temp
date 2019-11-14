@@ -1,0 +1,608 @@
+@font-face {
+  font-family: 'Bodoni 72';
+  src: url("/fonts/Bodoni 72.ttc");
+}
+
+/* Global */
+html {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  color: #0B92E4;
+  border-bottom: 1px solid #D1D1D1;
+}
+
+h2, h4 {
+  font-size: 42px;
+  font-family: 'Bodoni 72';
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h6 {
+  color: #005DA1;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 12px;
+}
+
+/* Navigation */
+.nav-link {
+  color: #ffffff;
+  text-shadow: 2px 3px 6px #484848;
+  text-decoration: none;
+}
+
+/* Line */
+.line {
+  height: 1px;
+  width: 200px;
+  margin-left: 20px;
+  background-color: #D1D1D1;
+}
+
+/* Arrow Button */
+.arrow-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+.arrow-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #005DA1;
+  font-weight: 400;
+}
+
+.arrow-link a i {
+  margin-left: 20px;
+  color: black;
+}
+
+/* Background Images */
+.bg-image {
+  position: absolute;
+  z-index: -1;
+}
+
+/* Sections */
+.section-container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 100px auto 0px;
+}
+
+.section-container .headline-container {
+  width: 50%;
+  padding: 20px;
+}
+
+.section-container .center-headline {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-container .right-headline {
+  width: 40%;
+  position: relative;
+  left: 40%;
+}
+
+.section-container .headline-text-container {
+  padding-top: 20px;
+}
+
+/* Menu Items */
+.menu-items {
+  width: 90%;
+  max-width: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.menu-items .menu-item-container {
+  background-color: #F2FAFF;
+  width: 250px;
+  margin: 5px;
+}
+
+.menu-items .menu-item-container .menu-item-image {
+  width: 250px;
+  height: 200px;
+}
+
+.menu-items .menu-item-container .menu-item-info {
+  padding: 12px;
+}
+
+.menu-items .menu-item-container .menu-item-info .menu-item-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-items .menu-item-container .menu-item-info .menu-item-heading .menu-item {
+  font-family: 'Bodoni 72';
+  font-size: 21px;
+}
+
+.menu-items .menu-item-container .menu-item-info .menu-item-heading .menu-price {
+  color: #005DA1;
+  font-weight: bold;
+}
+
+.menu-items .menu-item-container .menu-item-info .menu-item-description {
+  margin-top: 20px;
+}
+
+.menu-items .full-menu-item {
+  width: 100%;
+  background-color: #F2FAFF;
+}
+
+.menu-items .full-menu-item .full-menu-item-description {
+  margin-top: 10px;
+}
+
+/* Numbered Heading */
+.number-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number-heading h2 {
+  border-bottom: none;
+}
+
+.number-heading-title {
+  margin-left: 60px;
+}
+
+.number-heading-bm {
+  margin-bottom: 40px;
+}
+
+/* ----------------------- HOME PAGE ----------------------- */
+/* Hero Section */
+.hero-bg {
+  height: auto;
+  margin: 0 auto;
+  background-image: url("/images/las-marietas-islands.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-bg .nav-links {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.hero-bg .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.hero-bg .nav-links ul li {
+  list-style: none;
+}
+
+.hero-bg .nav-links ul img {
+  width: 300px;
+}
+
+.hero-bg .hero-header {
+  width: 90%;
+  margin: 200px auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-bg h1 {
+  text-shadow: 2px 3px 6px #484848;
+}
+
+.hero-bg .arrow-link a, .hero-bg .arrow-link i {
+  color: #ffffff;
+}
+
+/* Background Images */
+.welcome-tree-bg {
+  width: 400px;
+  left: -100px;
+  margin-top: 50px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+/* Welcome Section */
+.welcome-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.welcome-section img {
+  width: 400px;
+}
+
+.welcome-section .welcome-container {
+  margin-left: 50px;
+}
+
+/* Order Section */
+.order-section {
+  width: 100%;
+  max-width: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/images/order-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/order-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-section .order-container {
+  width: 70%;
+  max-width: 1200px;
+  margin: 100px auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.order-section .order-container h2 {
+  width: 250px;
+  margin: 0 auto;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.order-section .order-container p {
+  margin-top: 0px;
+}
+
+.order-section .order-container .order-outlets-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin: 20px auto 0px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.order-section .order-container .order-outlets-container img {
+  height: 80px;
+  margin: 20px;
+}
+
+.order-section .order-container .arrow-link a, .order-section .order-container .arrow-link i {
+  color: #ffffff;
+}
+
+/* Favorites Section */
+.favorite-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.favorite-container img {
+  width: 900px;
+  margin: 10px;
+}
+
+.favorite-container .favorite-item-box {
+  padding: 20px;
+}
+
+.flex-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+/* Background Images */
+.events-drink-bg {
+  width: 800px;
+  left: -340px;
+  margin-top: 60px;
+}
+
+/* Events Section */
+.events-container .event-box {
+  max-width: 800px;
+  margin: 0px auto 20px;
+  background-color: #F2FAFF;
+}
+
+.events-container .event-box img {
+  width: 100%;
+}
+
+.events-container .event-box .event-info-box {
+  padding: 20px;
+}
+
+.events-container .event-box .event-info-box .event-title {
+  font-family: 'Bodoni 72', cursive;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 100px;
+  background-color: #005DA1;
+}
+
+footer .footer-container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-container .footer-heading {
+  font-size: 21px;
+  font-family: 'Bodoni 72', cursive;
+  color: #69C5FF;
+  border-bottom: 1px solid #69C5FF;
+}
+
+footer .footer-container .icon-info {
+  margin-top: 6px;
+}
+
+footer .footer-container .icon-info i {
+  color: #69C5FF;
+}
+
+footer .footer-container .icon-info a {
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+footer .footer-container .hours-container p {
+  margin-top: 6px;
+}
+
+.subfooter {
+  margin-top: 0;
+  background-color: #0B92E4;
+}
+
+.subfooter .follow-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subfooter .follow-icons i {
+  margin-left: 20px;
+}
+
+/* ----------------------- MENU PAGE ----------------------- */
+/* Background Images */
+.breakfast-bg {
+  width: 500px;
+  right: -160px;
+  margin-top: 100px;
+}
+
+.flip-bg {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.left-side-bg {
+  left: -160px;
+}
+
+/* ----------------------- CONTACT PAGE ----------------------- */
+/* Map Section */
+.map-section .map-image {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url("/images/islas-marietas-map.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.map-section footer {
+  margin-top: 0;
+  background-color: #F2FAFF;
+}
+
+.map-section footer .contact-container a {
+  color: black;
+}
+
+.map-section footer .hours-container p {
+  color: black;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 732px) {
+  /* Global */
+  .line {
+    width: 100px;
+    margin-left: 20px;
+  }
+  /* Numbered Heading */
+  .number-heading-title {
+    margin-left: 20px;
+  }
+  /* Sections */
+  .section-container .headline-container {
+    width: 100%;
+  }
+  .section-container .center-headline {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .section-container .right-headline {
+    width: 100%;
+    left: 0%;
+  }
+  .section-container .headline-text-container {
+    padding-top: 20px;
+  }
+  /* Hero Section */
+  .hero-bg .nav-link {
+    display: none;
+  }
+  /* Welcome */
+  .welcome-tree-bg {
+    width: 200px;
+    left: -50px;
+  }
+  .welcome-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .welcome-section img {
+    width: 90%;
+  }
+  .welcome-section .welcome-container {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .favorite-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .favorite-container img {
+    height: 250px;
+    width: auto;
+  }
+  /* Order Section */
+  .order-section .order-container h2 {
+    width: 90%;
+  }
+  /* Events Section */
+  .events-drink-bg {
+    width: 300px;
+    left: -130px;
+    margin-top: 140px;
+  }
+  /* Footer */
+  footer .footer-container {
+    width: 90%;
+    text-align: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer .footer-container .contact-container {
+    margin-bottom: 20px;
+  }
+  /* Subfooter */
+  .subfooter .footer-container {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .subfooter .follow-icons {
+    margin-bottom: 20px;
+  }
+  /* ----------------------- MENU PAGE ----------------------- */
+  /* Background Images */
+  .breakfast-bg {
+    width: 250px;
+    right: -80px;
+    margin-top: 280px;
+  }
+  .left-side-bg {
+    left: -50px;
+  }
+}
+/*# sourceMappingURL=stylesheet.css.map */
