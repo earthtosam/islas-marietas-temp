@@ -123,8 +123,6 @@ p {
 
 /* Menu Items */
 .menu-items {
-  width: 90%;
-  max-width: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,12 +136,12 @@ p {
 
 .menu-items .menu-item-container {
   background-color: #F2FAFF;
-  width: 250px;
-  margin: 5px;
+  width: 270px;
+  margin: 10px;
 }
 
 .menu-items .menu-item-container .menu-item-image {
-  width: 250px;
+  width: 100%;
   height: 200px;
 }
 
@@ -155,6 +153,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -208,12 +208,12 @@ p {
 /* ----------------------- HOME PAGE ----------------------- */
 /* Hero Section */
 .hero-bg {
-  height: auto;
   margin: 0 auto;
   background-image: url("../images/las-marietas-islands.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  /* Burger */
 }
 
 .hero-bg .nav-links {
@@ -239,7 +239,20 @@ p {
 }
 
 .hero-bg .nav-links ul img {
-  width: 300px;
+  width: 250px;
+}
+
+.hero-bg .burger {
+  display: none;
+}
+
+.hero-bg .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hero-bg .hero-header {
@@ -485,6 +498,7 @@ footer .footer-container .hours-container p {
   background-image: url("../images/islas-marietas-map.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .map-section footer {
@@ -503,6 +517,9 @@ footer .footer-container .hours-container p {
 /* Media Queries */
 @media only screen and (max-width: 732px) {
   /* Global */
+  h1 {
+    font-size: 42px;
+  }
   .line {
     width: 100px;
     margin-left: 20px;
@@ -527,8 +544,59 @@ footer .footer-container .hours-container p {
     padding-top: 20px;
   }
   /* Hero Section */
-  .hero-bg .nav-link {
-    display: none;
+  .hero-bg {
+    /* Burger */
+  }
+  .hero-bg .nav-links {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #0B92E4;
+    width: 50%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+    z-index: 998;
+  }
+  .hero-bg .nav-links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 95%;
+    opacity: 1;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .hero-bg .nav-links ul img {
+    width: 90%;
+  }
+  .hero-bg .burger {
+    display: block;
+    position: fixed;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    right: 5%;
+    top: 25px;
+    padding: 5px;
+    background: #0B92E4;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .hero-bg .hero-header {
+    margin: 100px auto;
   }
   /* Welcome */
   .welcome-tree-bg {
@@ -603,6 +671,61 @@ footer .footer-container .hours-container p {
   }
   .left-side-bg {
     left: -50px;
+  }
+  /* Burger Toggles */
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  @-webkit-keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  .toggle .line1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+            transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  /* Menu Items */
+  .menu-items {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .menu-items .menu-item-container {
+    width: 100%;
+  }
+  .menu-items .menu-item-container .menu-item-image {
+    height: auto;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */

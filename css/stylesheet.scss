@@ -102,8 +102,6 @@ p {
 }
 /* Menu Items */
 .menu-items {
-    width: 90%;
-    max-width: 1500px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -111,16 +109,17 @@ p {
     transform: translateX(-50%);
     .menu-item-container {
         background-color: #F2FAFF;
-        width: 250px;
-        margin: 5px;
+        width: 270px;
+        margin: 10px;
         .menu-item-image {
-            width: 250px;
+            width: 100%;
             height: 200px;
         }
         .menu-item-info {
             padding: 12px;
             .menu-item-heading {
                 display: flex;
+                flex-flow: wrap;
                 justify-content: space-between;
                 .menu-item {
                     font-family: 'Bodoni 72';
@@ -181,8 +180,19 @@ p {
                 list-style: none;
             }
             img {
-                width: 300px;
+                width: 250px;
             }
+        }
+    }
+    /* Burger */
+    .burger {
+        display: none;
+        div {
+            width: 25px;
+            height: 3px;
+            background-color: #ffffff;
+            margin: 5px;
+            transition: all 0.3s ease;
         }
     }
     .hero-header {
@@ -226,7 +236,7 @@ p {
 .order-section {
     width: 100%;
     max-width: none;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/order-bg.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/order-bg.jpg");
     background-position: center;
     background-size: cover;
     align-items: center;
@@ -380,7 +390,7 @@ footer {
         width: 100%;
         height: 500px;
         margin: 0 auto;
-        background-image: url("./images/islas-marietas-map.png");
+        background-image: url("../images/islas-marietas-map.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -408,6 +418,9 @@ footer {
 /* Media Queries */
 @media only screen and (max-width: 732px) {
     /* Global */
+    h1 {
+        font-size: 42px;
+    }
     .line {
         width: 100px;
         margin-left: 20px;
@@ -435,8 +448,42 @@ footer {
     }
     /* Hero Section */
     .hero-bg {
-        .nav-link {
-            display: none;
+        .nav-links {
+            position: fixed;
+            right: 0;
+            height: 100vh;
+            top: 0px;
+            display: flex;
+            background: $mainColor;
+            width: 50%;
+            transform: translateX(100%);
+            transition: transform 0.2s ease-in;
+            z-index: 998;
+            ul {
+                flex-direction: column;
+                align-items: center;
+                width: 95%;
+                opacity: 1;
+                justify-content: space-evenly;
+                img {
+                    width: 90%;
+                }
+            }
+        }
+        /* Burger */
+        .burger {
+            display: block;
+            position: fixed;
+            align-items: center;
+            right: 5%;
+            top: 25px;
+            padding: 5px;
+            background: $mainColor;
+            cursor: pointer;
+            z-index: 999;
+        }
+        .hero-header {
+            margin: 100px auto;
         }
     }
     /* Welcome */
@@ -507,4 +554,45 @@ footer {
     .left-side-bg {
         left: -50px;
     }
+    
+    /* Burger Toggles */
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px)
+        }
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+
+
+@media only screen and (max-width: 668px) {
+    /* Menu Items */
+    .menu-items {
+        justify-content: space-evenly;
+        .menu-item-container {
+            width: 100%;
+            .menu-item-image {
+                height: auto;
+            }
+    }
+}
 }
