@@ -164,7 +164,6 @@ p {
 /* Hero Section */
 .hero-bg {
     margin: 0 auto;
-    background-image: url("../images/las-marietas-islands.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -200,6 +199,9 @@ p {
         margin: 200px auto;
         text-align: center;
         color: $whiteText;
+        img {
+            display: none;
+        }
     }
     h1 {
         text-shadow: $textShadow;
@@ -210,6 +212,17 @@ p {
         }
     }
 }
+/* Background Images */
+.home-bg {
+    background-image: url("../images/las-marietas-islands.jpg");
+}
+.menu-bg {
+    background-image: url("../images/menu-hero-bg.jpg");
+}
+.contact-bg {
+    background-image: url("../images/contact-hero-bg.jpg");
+}
+
 
 /* Background Images */
 .welcome-tree-bg {
@@ -357,7 +370,7 @@ footer {
     }
 }
 .subfooter {
-    margin-top: 0;
+    margin-top: 50px;
     background-color: $mainColor;
     .follow-icons {
         display: flex;
@@ -388,26 +401,14 @@ footer {
 .map-section {
     .map-image {
         width: 100%;
-        height: 500px;
+        height: 300px;
         margin: 0 auto;
         background-image: url("../images/islas-marietas-map.png");
         background-position: center;
-        background-size: cover;
         background-repeat: no-repeat;
     }
     footer {
         margin-top: 0;
-        background-color: $boxColor;
-        .contact-container {
-            a {
-                color: black;
-            }
-        }
-        .hours-container {
-            p {
-                color: black;
-            }
-        }
     }
 }
 
@@ -465,8 +466,11 @@ footer {
                 width: 95%;
                 opacity: 1;
                 justify-content: space-evenly;
+                .nav-link {
+                    text-shadow: none;
+                }
                 img {
-                    width: 90%;
+                    display: none;
                 }
             }
         }
@@ -484,6 +488,12 @@ footer {
         }
         .hero-header {
             margin: 100px auto;
+            img {
+                display: inline;
+                position: relative;
+                width: 60%;
+                top: -10px;
+            }
         }
     }
     /* Welcome */
@@ -510,7 +520,14 @@ footer {
     }
     /* Order Section */
     .order-section {
+        background-attachment: fixed;
         .order-container {
+            .order-outlets-container {
+                img {
+                    height: 60px;
+                    margin: 5px;
+                }
+            }
             h2 {
                 width: 90%;
             }
@@ -587,12 +604,28 @@ footer {
 @media only screen and (max-width: 668px) {
     /* Menu Items */
     .menu-items {
-        justify-content: space-evenly;
+        justify-content: space-between;
+        .menu-item-container {
+            width: 45%;
+            .menu-item-image {
+                height: 170px;
+            }
+        }
+        .full-menu-item {
+            width: 100%;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    /* Menu Items */
+    .menu-items {
         .menu-item-container {
             width: 100%;
             .menu-item-image {
                 height: auto;
             }
+        }
     }
-}
 }

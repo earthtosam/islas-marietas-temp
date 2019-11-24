@@ -209,7 +209,6 @@ p {
 /* Hero Section */
 .hero-bg {
   margin: 0 auto;
-  background-image: url("../images/las-marietas-islands.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -262,12 +261,29 @@ p {
   color: #ffffff;
 }
 
+.hero-bg .hero-header img {
+  display: none;
+}
+
 .hero-bg h1 {
   text-shadow: 2px 3px 6px #484848;
 }
 
 .hero-bg .arrow-link a, .hero-bg .arrow-link i {
   color: #ffffff;
+}
+
+/* Background Images */
+.home-bg {
+  background-image: url("../images/las-marietas-islands.jpg");
+}
+
+.menu-bg {
+  background-image: url("../images/menu-hero-bg.jpg");
+}
+
+.contact-bg {
+  background-image: url("../images/contact-hero-bg.jpg");
 }
 
 /* Background Images */
@@ -458,7 +474,7 @@ footer .footer-container .hours-container p {
 }
 
 .subfooter {
-  margin-top: 0;
+  margin-top: 50px;
   background-color: #0B92E4;
 }
 
@@ -493,25 +509,15 @@ footer .footer-container .hours-container p {
 /* Map Section */
 .map-section .map-image {
   width: 100%;
-  height: 500px;
+  height: 300px;
   margin: 0 auto;
   background-image: url("../images/islas-marietas-map.png");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .map-section footer {
   margin-top: 0;
-  background-color: #F2FAFF;
-}
-
-.map-section footer .contact-container a {
-  color: black;
-}
-
-.map-section footer .hours-container p {
-  color: black;
 }
 
 /* Media Queries */
@@ -579,8 +585,11 @@ footer .footer-container .hours-container p {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  .hero-bg .nav-links ul .nav-link {
+    text-shadow: none;
+  }
   .hero-bg .nav-links ul img {
-    width: 90%;
+    display: none;
   }
   .hero-bg .burger {
     display: block;
@@ -597,6 +606,12 @@ footer .footer-container .hours-container p {
   }
   .hero-bg .hero-header {
     margin: 100px auto;
+  }
+  .hero-bg .hero-header img {
+    display: inline;
+    position: relative;
+    width: 60%;
+    top: -10px;
   }
   /* Welcome */
   .welcome-tree-bg {
@@ -627,6 +642,13 @@ footer .footer-container .hours-container p {
     width: auto;
   }
   /* Order Section */
+  .order-section {
+    background-attachment: fixed;
+  }
+  .order-section .order-container .order-outlets-container img {
+    height: 60px;
+    margin: 5px;
+  }
   .order-section .order-container h2 {
     width: 90%;
   }
@@ -717,10 +739,23 @@ footer .footer-container .hours-container p {
 @media only screen and (max-width: 668px) {
   /* Menu Items */
   .menu-items {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
+  .menu-items .menu-item-container {
+    width: 45%;
+  }
+  .menu-items .menu-item-container .menu-item-image {
+    height: 170px;
+  }
+  .menu-items .full-menu-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  /* Menu Items */
   .menu-items .menu-item-container {
     width: 100%;
   }
