@@ -10,8 +10,10 @@ $boxColor: #F2FAFF;
 $mainColorLight: #69C5FF;
 $headerLine: #D1D1D1;
 $textShadow: 2px 3px 6px #484848;
-html {
-    overflow-x: hidden;
+body, html {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden !important;
 }
 * {
     margin: 0;
@@ -489,7 +491,7 @@ footer {
         .hero-header {
             margin: 100px auto;
             img {
-                display: inline;
+                display: inline-block;
                 position: relative;
                 width: 60%;
                 top: -10px;
