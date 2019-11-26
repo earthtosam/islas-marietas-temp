@@ -294,10 +294,11 @@ p {
     display: flex;
     align-items: center;
     img {
-        width: 900px;
+        width: 50%;
         margin: 10px;
     }
     .favorite-item-box {
+        width: 50%;
         padding: 20px;
     }
 }
@@ -340,8 +341,7 @@ footer {
     .footer-container {
         width: 90%;
         max-width: 1500px;
-        margin: 0 auto;
-        padding: 20px;
+        margin: 20px auto;
         color: $whiteText;
         display: flex;
         justify-content: space-around;
@@ -374,8 +374,16 @@ footer {
 .subfooter {
     margin-top: 50px;
     background-color: $mainColor;
+    align-items: center;
+    .footer-container {
+        align-items: center;
+    }
     .follow-icons {
         display: flex;
+        align-items: center;
+        a {
+            color: $whiteText;
+        }
         i {
             margin-left: 20px;
         }
@@ -460,7 +468,7 @@ footer {
             background: $mainColor;
             width: 50%;
             transform: translateX(100%);
-            transition: transform 0.2s ease-in;
+            transition: transform 0.5s ease-in;
             z-index: 998;
             ul {
                 flex-direction: column;
@@ -522,7 +530,6 @@ footer {
     }
     /* Order Section */
     .order-section {
-        background-attachment: fixed;
         .order-container {
             .order-outlets-container {
                 img {
@@ -533,6 +540,16 @@ footer {
             h2 {
                 width: 90%;
             }
+        }
+    }
+    /* Favorites Section */
+    .favorite-container {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .favorite-item-box {
+            width: 100%;
         }
     }
     /* Events Section */
@@ -546,16 +563,18 @@ footer {
         .footer-container {
             width: 90%;
             text-align: left;
-            flex-direction: column;
-            justify-content: space-evenly;
+            display: block;
+            justify-content: space-around;
             .contact-container {
                 margin-bottom: 20px;
+                
             }
         }
     }
     /* Subfooter */
     .subfooter {
         .footer-container {
+            display: flex;
             text-align: center;
             flex-direction: column-reverse;
     }
@@ -568,7 +587,7 @@ footer {
     .breakfast-bg {
         width: 250px;
         right: -80px;
-        margin-top: 280px;
+        opacity: 0.3;
     }
     .left-side-bg {
         left: -50px;
