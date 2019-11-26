@@ -534,9 +534,6 @@ footer .footer-container .hours-container p {
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .container {
@@ -555,7 +552,7 @@ footer .footer-container .hours-container p {
   border: none;
   outline: none;
   padding: 10px;
-  margin: 4px;
+  margin: 6px;
   width: 100px;
   height: 80px;
   background-color: #69C5FF;

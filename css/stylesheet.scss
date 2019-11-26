@@ -413,7 +413,6 @@ footer {
     margin: 20px auto 0px;
     display: flex;
     flex-flow: wrap;
-    justify-content: space-evenly;
 }
 .container {
     overflow: hidden;
@@ -428,7 +427,7 @@ footer {
     border: none;
     outline: none;
     padding: 10px;
-    margin: 4px;
+    margin: 6px;
     width: 100px;
     height: 80px;
     background-color: $mainColorLight;
