@@ -9,7 +9,7 @@ $secondaryColor: #005DA1;
 $boxColor: #F2FAFF;
 $mainColorLight: #69C5FF;
 $headerLine: #D1D1D1;
-$textShadow: 2px 3px 6px #484848;
+$textShadow: 2px 3px 3px #484848;
 body, html {
     width: 100%;
     position: relative;
@@ -211,6 +211,7 @@ p {
     .arrow-link {
         a, i {
             color: $whiteText;
+            text-shadow: $textShadow;
         }
     }
 }
@@ -405,6 +406,42 @@ footer {
     left: -160px;
 }
 
+/* Menu Selector */
+#menuBtnContainer {
+    width: 90%;
+    max-width: 1500px;
+    margin: 20px auto 0px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+.container {
+    overflow: hidden;
+  }
+  .filterDiv {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 4px;
+    width: 100px;
+    height: 80px;
+    background-color: $mainColorLight;
+    color: white;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: $mainColor;
+  }
+  .btn.active {
+    background-color: $mainColor;
+    color: white;
+  }
 
 /* ----------------------- CONTACT PAGE ----------------------- */
 /* Map Section */
@@ -567,7 +604,6 @@ footer {
             justify-content: space-around;
             .contact-container {
                 margin-bottom: 20px;
-                
             }
         }
     }
@@ -640,6 +676,10 @@ footer {
 
 
 @media only screen and (max-width: 450px) {
+    /* Hero Section */
+    .hero-bg {
+        min-height: 100vh;
+    }
     /* Menu Items */
     .menu-items {
         .menu-item-container {

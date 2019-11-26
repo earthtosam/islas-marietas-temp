@@ -51,7 +51,7 @@ p {
 /* Navigation */
 .nav-link {
   color: #ffffff;
-  text-shadow: 2px 3px 6px #484848;
+  text-shadow: 2px 3px 3px #484848;
   text-decoration: none;
 }
 
@@ -268,11 +268,12 @@ p {
 }
 
 .hero-bg h1 {
-  text-shadow: 2px 3px 6px #484848;
+  text-shadow: 2px 3px 3px #484848;
 }
 
 .hero-bg .arrow-link a, .hero-bg .arrow-link i {
   color: #ffffff;
+  text-shadow: 2px 3px 3px #484848;
 }
 
 /* Background Images */
@@ -521,6 +522,54 @@ footer .footer-container .hours-container p {
 
 .left-side-bg {
   left: -160px;
+}
+
+/* Menu Selector */
+#menuBtnContainer {
+  width: 90%;
+  max-width: 1500px;
+  margin: 20px auto 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 4px;
+  width: 100px;
+  height: 80px;
+  background-color: #69C5FF;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0B92E4;
+}
+
+.btn.active {
+  background-color: #0B92E4;
+  color: white;
 }
 
 /* ----------------------- CONTACT PAGE ----------------------- */
@@ -777,6 +826,10 @@ footer .footer-container .hours-container p {
 }
 
 @media only screen and (max-width: 450px) {
+  /* Hero Section */
+  .hero-bg {
+    min-height: 100vh;
+  }
   /* Menu Items */
   .menu-items .menu-item-container {
     width: 100%;

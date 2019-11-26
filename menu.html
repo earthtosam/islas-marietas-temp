@@ -54,11 +54,32 @@
         </div>
     </div>
 
+    <!-- Control buttons -->
+    <div class="headline-container section-container">
+        <h2>Menu</h2>
+        <p class="headline-text-container">Check out the entire menu or search by category.</p>
+    </div>
+    <div id="menuBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Show all</button>
+        <button class="btn" onclick="filterSelection('01')">Breakfast</button>
+        <button class="btn" onclick="filterSelection('02')">Mexcian Platters</button>
+        <button class="btn" onclick="filterSelection('03')">La Carreta</button>
+        <button class="btn" onclick="filterSelection('04')">Pa’l@s Atrevid@s Botanas</button>
+        <button class="btn" onclick="filterSelection('05')">La Carreta del Mar</button>
+        <button class="btn" onclick="filterSelection('06')">Tostadas</button>
+        <button class="btn" onclick="filterSelection('07')">Platillos de la Isla</button>
+        <button class="btn" onclick="filterSelection('08')">Sushi</button>
+        <button class="btn" onclick="filterSelection('09')">Pa’ los Escuincles</button>
+        <button class="btn" onclick="filterSelection('10')">Sides</button>
+        <button class="btn" onclick="filterSelection('11')">Postres</button>
+        <button class="btn" onclick="filterSelection('12')">Beverages</button>
+    </div>
+
     <!-- 01 Breakfast -->
-    <!-- Breakfast Background Image -->
-    <img src="./images/breakfast-bg.png" alt="Sliced Fruit" class="bg-image breakfast-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 01">
+        <!-- Breakfast Background Image -->
+        <img src="./images/breakfast-bg.png" alt="Sliced Fruit" class="bg-image breakfast-bg">
         <div class="number-heading">
             <h2>01</h2>
             <div class="line"></div>
@@ -147,10 +168,10 @@
     </div>
 
     <!-- 02 Mexcian Platters -->
-    <!-- Mexcian Platters Background Image -->
-    <img src="./images/mexican-platters-bg.png" alt="Sliced Lemons" class="bg-image breakfast-bg left-side-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 02">
+        <!-- Mexcian Platters Background Image -->
+        <img src="./images/mexican-platters-bg.png" alt="Sliced Lemons" class="bg-image breakfast-bg left-side-bg">
         <div class="number-heading right-headline">
             <h2>02</h2>
             <div class="line"></div>
@@ -335,10 +356,10 @@
     </div>
 
     <!-- 03 La Carreta -->
-    <!-- La Carreta Background Image -->
-    <img src="./images/palmtree.png" alt="Palm Tree" class="bg-image breakfast-bg flip-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 03">
+        <!-- La Carreta Background Image -->
+        <img src="./images/palmtree.png" alt="Palm Tree" class="bg-image breakfast-bg flip-bg">
         <div class="number-heading">
             <h2>03</h2>
             <div class="line"></div>
@@ -490,10 +511,11 @@
     </div>
 
     <!-- 04 Pa’l@s Atrevid@s Botanas -->
-    <!-- Pa’l@s Atrevid@s Botanas Background Image -->
-    <img src="./images/atrevidos-botanas-bg.png" alt="Tree Leaves" class="bg-image breakfast-bg left-side-bg flip-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 04">
+        <!-- Pa’l@s Atrevid@s Botanas Background Image -->
+        <img src="./images/atrevidos-botanas-bg.png" alt="Tree Leaves"
+            class="bg-image breakfast-bg left-side-bg flip-bg">
         <div class="number-heading right-headline">
             <h2>04</h2>
             <div class="line"></div>
@@ -617,10 +639,10 @@
     </div>
 
     <!-- 05 La Carreta del Mar -->
-    <!-- La Carreta del Mar Background Image -->
-    <img src="./images/carreta-del-mar.png" alt="Breakfast fruit" class="bg-image breakfast-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 05">
+        <!-- La Carreta del Mar Background Image -->
+        <img src="./images/carreta-del-mar.png" alt="Breakfast fruit" class="bg-image breakfast-bg">
         <div class="number-heading">
             <h2>05</h2>
             <div class="line"></div>
@@ -755,10 +777,10 @@
     </div>
 
     <!-- 06 Tostadas -->
-    <!-- Tostadas Background Image -->
-    <img src="./images/tostadas-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 06">
+        <!-- Tostadas Background Image -->
+        <img src="./images/tostadas-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
         <div class="number-heading right-headline">
             <h2>06</h2>
             <div class="line"></div>
@@ -824,10 +846,10 @@
     </div>
 
     <!-- 07 Platillos de la Isla -->
-    <!-- Platillos de la Isla Background Image -->
-    <img src="./images/platillos-isla-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 07">
+        <!-- Platillos de la Isla Background Image -->
+        <img src="./images/platillos-isla-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg">
         <div class="number-heading">
             <h2>07</h2>
             <div class="line"></div>
@@ -1017,10 +1039,10 @@
     </div>
 
     <!-- 08 Sushi -->
-    <!-- Sushi Background Image -->
-    <img src="./images/sushi-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 08">
+        <!-- Sushi Background Image -->
+        <img src="./images/sushi-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
         <div class="number-heading right-headline">
             <h2>08</h2>
             <div class="line"></div>
@@ -1093,10 +1115,10 @@
     </div>
 
     <!-- 09 Pa’ los Escuincles -->
-    <!-- Pa’ los Escuincles Background Image -->
-    <img src="./images/escuincles-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 09">
+        <!-- Pa’ los Escuincles Background Image -->
+        <img src="./images/escuincles-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg">
         <div class="number-heading">
             <h2>09</h2>
             <div class="line"></div>
@@ -1169,10 +1191,10 @@
     </div>
 
     <!-- 10 Sides -->
-    <!-- Sides Background Image -->
-    <img src="./images/sides-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 10">
+        <!-- Sides Background Image -->
+        <img src="./images/sides-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
         <div class="number-heading right-headline">
             <h2>10</h2>
             <div class="line"></div>
@@ -1279,10 +1301,10 @@
     </div>
 
     <!-- 11 Postres -->
-    <!-- Postres Background Image -->
-    <img src="./images/sides-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg flip-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 11">
+        <!-- Postres Background Image -->
+        <img src="./images/sides-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg flip-bg">
         <div class="number-heading">
             <h2>11</h2>
             <div class="line"></div>
@@ -1320,10 +1342,10 @@
     </div>
 
     <!-- 12 Beverages -->
-    <!-- Beverages Background Image -->
-    <img src="./images/beverages-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
     <!-- Menu Section -->
-    <div class="section-container">
+    <div class="section-container filterDiv 12">
+        <!-- Beverages Background Image -->
+        <img src="./images/beverages-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
         <div class="number-heading right-headline">
             <h2>12</h2>
             <div class="line"></div>
@@ -1522,15 +1544,19 @@
             <p>Copyright ©2019 All rights reserved | Islas Marietas Restaurant</p>
             <div class="follow-icons">
                 <p>Follow Us:</p>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-pinterest"></i>
+                <a href="https://www.facebook.com/islasmarietasrestaurant/" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/islasmarietasrestaurant/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/islasmarietasrestaurant/" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
 
     <!-- Javascript Source Code -->
-    <script src="javascript/app.js"></script>
+    <script src="./javascript/app.js"></script>
+    <script src="./javascript/menu_selector.js"></script>
 </body>
 
 </html>
