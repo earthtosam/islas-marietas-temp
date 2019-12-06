@@ -51,7 +51,7 @@ p {
 /* Navigation */
 .nav-link {
   color: #ffffff;
-  text-shadow: 2px 3px 3px #484848;
+  text-shadow: 2px 3px 6px #0000005f;
   text-decoration: none;
 }
 
@@ -268,12 +268,12 @@ p {
 }
 
 .hero-bg h1 {
-  text-shadow: 2px 3px 3px #484848;
+  text-shadow: 2px 3px 6px #0000005f;
 }
 
 .hero-bg .arrow-link a, .hero-bg .arrow-link i {
   color: #ffffff;
-  text-shadow: 2px 3px 3px #484848;
+  text-shadow: 2px 3px 6px #0000005f;
 }
 
 /* Background Images */
