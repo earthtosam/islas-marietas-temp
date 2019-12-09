@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4bc9f4da23.js" crossorigin="anonymous"></script>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 
 <body>
@@ -21,19 +23,19 @@
     <div class="hero-bg home-bg">
         <div class="nav-links">
             <ul>
-                <li>
-                    <a href="index.html" class="nav-link">HOME</a>
+                <li class="animated fadeInUp">
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
-                <li>
-                    <a href="menu.html" class="nav-link">MENU</a>
+                <li class="animated fadeInUp">
+                    <a href="menu.html" class="nav-link">Menu</a>
                 </li>
-                <img src="./images/IslasMarietasTransparentWebLogo.png" alt="Logo">
-                <li>
-                    <a href="contact.html" class="nav-link">CONTACT</a>
+                <img class="animated fadeInUp" src="./images/IslasMarietasTransparentWebLogo.png" alt="Logo">
+                <li class="animated fadeInUp">
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </li>
-                <li>
+                <li class="animated fadeInUp">
                     <a href="https://www.doordash.com/store/islas-marietas-salinas-296471/" target="_blank"
-                        class="nav-link">ORDER</a>
+                        class="nav-link">Order</a>
                 </li>
             </ul>
         </div>
@@ -58,16 +60,17 @@
     <img src="./images/palmtree.png" alt="Palm Tree" class="bg-image welcome-tree-bg">
 
     <!-- Welcome Section -->
-    <div class="welcome-section section-container">
-        <img src="./images/PHOTO-2019-10-31-16-23-41.jpg" alt="Welcome">
+    <div class="welcome-section section-container wow animated fadeInUp">
+        <img class="welcome-img" src="./images/PHOTO-2019-10-31-16-23-41.jpg" alt="Welcome">
         <div class="welcome-container headline-container">
+            <img src="./images/IslasMarietasTransparentLogo.png" alt="">
             <h2>Welcome</h2>
             <p class="headline-text-container">We make the greatest seafood delicacies that Mexico has to offer! We also
                 provide a fresh variety of foods in our menu and provide an authentic ambience to the restaurant. Stop
                 by to see for yourself!
             </p>
             <div class="arrow-link">
-                <a href="#">
+                <a href="menu.html">
                     <p>Go to Menu</p>
                     <i class="fas fa-arrow-circle-right"></i>
                 </a>
@@ -76,7 +79,7 @@
     </div>
 
     <!-- Mini Menu -->
-    <div class="mini-menu-section section-container">
+    <div class="mini-menu-section section-container wow animated fadeInLeft">
         <div class="headline-container">
             <h2>Menu</h2>
             <p class="headline-text-container">
@@ -211,11 +214,12 @@
 
     <!-- Favorites Section -->
     <div class="specials-section section-container">
-        <div class="headline-container center-headline">
+        <div class="headline-container center-headline wow animated fadeInLeft">
             <h2>Favorites</h2>
         </div>
-        <div class="favorite-container">
+        <div class="favorite-container wow animated fadeInLeft">
             <div class="favorite-item-box">
+                <img src="./images/IslasMarietasTransparentLogo.png" alt="">
                 <div class="number-heading">
                     <h2>01</h2>
                     <div class="line"></div>
@@ -234,8 +238,9 @@
             </div>
             <img src="./images/menu/Aguachile.jpg" alt="Aguachiles">
         </div>
-        <div class="favorite-container flex-reverse">
+        <div class="favorite-container flex-reverse wow animated fadeInRight">
             <div class="favorite-item-box">
+                <img src="./images/IslasMarietasTransparentLogo.png" alt="">
                 <div class="number-heading">
                     <h2>02</h2>
                     <div class="line"></div>
@@ -258,10 +263,10 @@
     </div>
 
     <!-- Events Background Image -->
-    <img src="./images/event-drink.PNG" alt="" class="bg-image events-drink-bg">
+    <img src="./images/event-drink.PNG" alt="" class="bg-image events-drink-bg wow animated fadeInUp">
 
     <!-- Events Section -->
-    <div class="events-section section-container">
+    <div class="events-section section-container wow animated fadeInUp">
         <div class="headline-container center-headline">
             <h2>Events</h2>
         </div>
@@ -287,7 +292,9 @@
     <!-- Footer -->
     <footer class="subfooter">
         <div class="footer-container">
-            <p>Copyright ©2019 All rights reserved | Islas Marietas Restaurant</p>
+            <p>Copyright ©2019 Islas Marietas Restaurant. Developed by <a href="https://www.samramirez.xyz/"
+                    target="_blank">Sam R.</a>
+            </p>
             <div class="follow-icons">
                 <p>Follow Us:</p>
                 <a href="https://www.facebook.com/islasmarietasrestaurant/" target="_blank"><i
@@ -302,6 +309,10 @@
 
     <!-- Javascript Source Code -->
     <script src="javascript/app.js"></script>
+    <script src="./javascript/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
