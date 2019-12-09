@@ -426,6 +426,7 @@ footer {
     align-items: center;
     .footer-container {
         align-items: center;
+        margin: 20px auto;
         a {
             color: #000000;
             text-decoration: none;
@@ -436,6 +437,10 @@ footer {
         align-items: center;
         a {
             color: $whiteText;
+            transition: $mainTransition;
+        }
+        a:hover {
+            color: black;
         }
         i {
             margin-left: 20px;
