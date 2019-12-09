@@ -560,6 +560,10 @@ footer {
         background-image: url("../images/islas-marietas-map.png");
         background-position: center;
         background-repeat: no-repeat;
+        transition: $mainTransition;
+    }
+    .map-image:hover {
+        transform: scale(1.02);
     }
     footer {
         margin-top: 0;

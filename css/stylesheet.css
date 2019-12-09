@@ -710,6 +710,13 @@ footer .footer-container .hours-container p {
   background-image: url("../images/islas-marietas-map.png");
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.map-section .map-image:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .map-section footer {
