@@ -15,6 +15,9 @@
     <script src="https://kit.fontawesome.com/4bc9f4da23.js" crossorigin="anonymous"></script>
     <!-- Animate CSS -->
     <link rel="stylesheet" href="./css/animate.css">
+    <!-- Google Translate -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
@@ -34,8 +37,7 @@
                     <a href="contact.html" class="nav-link">Contact</a>
                 </li>
                 <li class="animated fadeInUp">
-                    <a href="https://www.doordash.com/store/islas-marietas-salinas-296471/" target="_blank"
-                        class="nav-link">Order</a>
+                    <a href="tel:8312726083" class="nav-link">Order</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +50,7 @@
             <img src="./images/IslasMarietasTransparentWebLogo.png" alt="Logo">
             <h1>Look through our menu!</h1>
             <div class="arrow-link">
-                <a href="https://www.doordash.com/store/islas-marietas-salinas-296471/" target="_blank">
+                <a href="tel:8312726083">
                     <p>Order Now</p>
                     <i class="fas fa-arrow-circle-right"></i>
                 </a>
@@ -1559,12 +1561,18 @@
                 <a href="https://www.facebook.com/islasmarietasrestaurant/" target="_blank"><i
                         class="fab fa-facebook fa-2x"></i></a>
             </div>
+            <div id="google_translate_element"></div>
         </div>
     </footer>
 
     <!-- Javascript Source Code -->
     <script src="./javascript/app.js"></script>
     <script src="./javascript/menu_selector.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
     <script src="./javascript/wow.min.js"></script>
     <script>
         new WOW().init();

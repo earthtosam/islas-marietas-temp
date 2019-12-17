@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Merriweather&display=swap");
 @font-face {
   font-family: 'Bodoni 72';
   src: url("/fonts/Bodoni 72.ttc");
@@ -16,7 +16,7 @@ body, html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Merriweather', serif;
   overflow-x: hidden;
 }
 
@@ -153,7 +153,7 @@ p {
 }
 
 .menu-items .menu-item-container {
-  background-color: #F2FAFF;
+  background-color: #eff8ff;
   width: 270px;
   margin: 10px;
 }
@@ -189,12 +189,12 @@ p {
 }
 
 .menu-items .menu-item-container .menu-item-info .menu-item-description {
-  margin-top: 20px;
+  margin: 10px auto;
 }
 
 .menu-items .full-menu-item {
   width: 100%;
-  background-color: #F2FAFF;
+  background-color: #eff8ff;
 }
 
 .menu-items .full-menu-item .full-menu-item-description {
@@ -321,18 +321,15 @@ p {
 
 /* Background Images */
 .home-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(white)), url("../images/las-marietas-islands.jpg");
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), white), url("../images/las-marietas-islands.jpg");
+  background-image: url("../images/las-marietas-islands.jpg");
 }
 
 .menu-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(white)), url("../images/menu-hero-bg.jpg");
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), white), url("../images/menu-hero-bg.jpg");
+  background-image: url("../images/menu-hero-bg.jpg");
 }
 
 .contact-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(white)), url("../images/contact-hero-bg.jpg");
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), white), url("../images/contact-hero-bg.jpg");
+  background-image: url("../images/contact-hero-bg.jpg");
 }
 
 /* Background Images */
@@ -358,7 +355,7 @@ p {
 }
 
 .welcome-section img {
-  width: 400px;
+  width: 550px;
 }
 
 .welcome-section .welcome-container {
@@ -367,8 +364,8 @@ p {
 
 .welcome-section .welcome-container img {
   position: absolute;
-  margin-top: -70px;
-  margin-left: 50px;
+  margin-top: -120px;
+  margin-left: -10px;
   opacity: 0.07;
   z-index: -10;
 }
@@ -412,15 +409,13 @@ p {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   margin: 20px auto 0px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background: rgba(255, 255, 255, 0.7);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.order-section .order-container .order-outlets-container img {
-  height: 80px;
-  margin: 20px;
+.order-section .order-container .order-outlets-container i {
+  text-shadow: 2px 3px 6px #000000cc;
+  margin: 10px auto;
 }
 
 .order-section .order-container .arrow-link a p, .order-section .order-container .arrow-link a i {
@@ -473,18 +468,29 @@ p {
 }
 
 /* Events Section */
+.events-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin: auto;
+  max-width: 900px;
+}
+
 .events-container .event-box {
-  max-width: 800px;
-  margin: 0px auto 20px;
-  background-color: #F2FAFF;
+  width: 100%;
+  margin: 20px;
+  background-color: #eff8ff;
 }
 
 .events-container .event-box img {
   width: 100%;
+  height: auto;
 }
 
 .events-container .event-box .event-info-box {
-  padding: 20px;
+  padding: 0px 20px 20px;
 }
 
 .events-container .event-box .event-info-box .event-title {
@@ -686,6 +692,7 @@ footer .footer-container .hours-container p {
   margin: 6px;
   width: 100px;
   height: 80px;
+  font-size: 16px;
   background-color: #69C5FF;
   color: white;
   cursor: pointer;
@@ -724,7 +731,27 @@ footer .footer-container .hours-container p {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 732px) {
+@media only screen and (max-width: 1150px) {
+  /* Subfooter */
+  .subfooter .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .subfooter .follow-icons {
+    margin-bottom: 20px;
+  }
+  .subfooter #google_translate_element {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1150px) and (max-width: 732px) {
   /* Global */
   h1 {
     font-size: 42px;
@@ -887,20 +914,9 @@ footer .footer-container .hours-container p {
   footer .footer-container .contact-container {
     margin-bottom: 20px;
   }
-  /* Subfooter */
-  .subfooter .footer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .subfooter .follow-icons {
-    margin-bottom: 20px;
-  }
+}
+
+@media only screen and (max-width: 1150px) {
   /* ----------------------- MENU PAGE ----------------------- */
   /* Background Images */
   .breakfast-bg {

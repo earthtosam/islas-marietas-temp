@@ -2,12 +2,12 @@
     font-family: 'Bodoni 72';
     src: url('/fonts/Bodoni\ 72.ttc');
 }
-@import url('https://fonts.googleapis.com/css?family=Lobster|Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Merriweather&display=swap');
 /* Global */
 $whiteText: #ffffff;
 $mainColor: #0B92E4;
 $secondaryColor: #005DA1;
-$boxColor: #F2FAFF;
+$boxColor: #eff8ff;
 $mainColorLight: #69C5FF;
 $headerLine: #D1D1D1;
 $textShadow: 2px 3px 6px #000000cc;
@@ -22,7 +22,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Merriweather', serif;
     overflow-x: hidden;
 }
 h1 {
@@ -123,7 +123,7 @@ p {
     left: 50%;
     transform: translateX(-50%);
     .menu-item-container {
-        background-color: #F2FAFF;
+        background-color: $boxColor;
         width: 270px;
         margin: 10px;
         .menu-item-image {
@@ -146,14 +146,14 @@ p {
                 }
             }
             .menu-item-description {
-                margin-top: 20px;
+                margin: 10px auto;
             }
     
         }
 }
 .full-menu-item {
     width: 100%;
-    background-color: #F2FAFF;
+    background-color: $boxColor;
     .full-menu-item-description {
         margin-top: 10px;
     }
@@ -247,13 +247,13 @@ p {
 }
 /* Background Images */
 .home-bg {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 1)), url("../images/las-marietas-islands.jpg");
+    background-image: url("../images/las-marietas-islands.jpg");
 }
 .menu-bg {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 1)), url("../images/menu-hero-bg.jpg");
+    background-image: url("../images/menu-hero-bg.jpg");
 }
 .contact-bg {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 1)), url("../images/contact-hero-bg.jpg");
+    background-image: url("../images/contact-hero-bg.jpg");
 }
 
 
@@ -271,14 +271,14 @@ p {
     align-items: center;
     justify-content: space-evenly;
     img {
-        width: 400px;
+        width: 550px;
     }
     .welcome-container {
         margin-left: 50px;
         img {
             position: absolute;
-            margin-top: -70px;
-            margin-left: 50px;
+            margin-top: -120px;
+            margin-left: -10px;
             opacity: 0.07;
             z-index: -10;
         }
@@ -312,11 +312,10 @@ p {
             display: flex;
             flex-flow: wrap;
             margin: 20px auto 0px;
-            justify-content: space-evenly;
-            background: rgba(255, 255, 255, 0.7);
-            img {
-                height: 80px;
-                margin: 20px;
+            justify-content: space-around;
+            i {
+                text-shadow: $textShadow;
+                margin: 10px auto;
             }
         }
         .arrow-link {
@@ -365,15 +364,20 @@ p {
 
 /* Events Section */
 .events-container {
+    display: flex;
+    flex-flow: wrap;
+    margin: auto;
+    max-width: 900px;
     .event-box {
-        max-width: 800px;
-        margin: 0px auto 20px;
+        width: 100%;
+        margin: 20px;
         background-color: $boxColor;
         img {
             width: 100%;
+            height: auto;
         }
         .event-info-box {
-            padding: 20px;
+            padding: 0px 20px 20px;
             .event-title {
                 font-family: 'Lobster', cursive;
                 font-size: 21px;
@@ -447,7 +451,6 @@ footer {
         }
     }
 }
-
 
 /* ----------------------- MENU PAGE ----------------------- */
 /* Background Images */
@@ -537,6 +540,7 @@ footer {
     margin: 6px;
     width: 100px;
     height: 80px;
+    font-size: 16px;
     background-color: $mainColorLight;
     color: white;
     cursor: pointer;
@@ -575,6 +579,22 @@ footer {
 
 
 /* Media Queries */
+@media only screen and (max-width: 1150px) {
+    /* Subfooter */
+    .subfooter {
+        .footer-container {
+            display: flex;
+            text-align: center;
+            flex-direction: column-reverse;
+    }
+    .follow-icons {
+        margin-bottom: 20px;
+    }
+    #google_translate_element {
+        margin-bottom: 20px;
+    }
+}
+
 @media only screen and (max-width: 732px) {
     /* Global */
     h1 {
@@ -729,16 +749,6 @@ footer {
                 margin-bottom: 20px;
             }
         }
-    }
-    /* Subfooter */
-    .subfooter {
-        .footer-container {
-            display: flex;
-            text-align: center;
-            flex-direction: column-reverse;
-    }
-    .follow-icons {
-        margin-bottom: 20px;
     }
 }
     /* ----------------------- MENU PAGE ----------------------- */
