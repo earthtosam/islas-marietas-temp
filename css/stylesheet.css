@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Mali&display=swap");
 @font-face {
   font-family: 'Bodoni 72';
   src: url("/fonts/Bodoni 72.ttc");
@@ -16,7 +16,7 @@ body, html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Merriweather', serif;
+  font-family: 'Mali', cursive;
   overflow-x: hidden;
 }
 
@@ -232,6 +232,7 @@ p {
 /* Hero Section */
 .hero-bg {
   margin: 0 auto;
+  height: 700px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -321,11 +322,11 @@ p {
 
 /* Background Images */
 .home-bg {
-  background-image: url("../images/las-marietas-islands.jpg");
+  background-image: url("../images/menu-hero-bg.jpg");
 }
 
 .menu-bg {
-  background-image: url("../images/menu-hero-bg.jpg");
+  background-image: url("../images/las-marietas-islands.jpg");
 }
 
 .contact-bg {
@@ -343,6 +344,7 @@ p {
 
 /* Welcome Section */
 .welcome-section {
+  margin: 300px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +361,8 @@ p {
 }
 
 .welcome-section .welcome-container {
-  margin-left: 50px;
+  width: 80%;
+  text-align: center;
 }
 
 .welcome-section .welcome-container img {
@@ -611,57 +614,6 @@ footer .footer-container .hours-container p {
 }
 
 /* Menu Selector */
-.menu-selector #crab-1 {
-  position: absolute;
-  width: 250px;
-  opacity: 0.07;
-  z-index: -999;
-}
-
-.menu-selector #crab-2 {
-  position: absolute;
-  width: 150px;
-  margin-top: 250px;
-  right: 10%;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  opacity: 0.07;
-  z-index: -999;
-}
-
-.menu-selector #crab-3 {
-  position: absolute;
-  width: 90px;
-  margin-top: 350px;
-  right: 40%;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  opacity: 0.07;
-  z-index: -999;
-}
-
-.menu-selector #crab-4 {
-  position: absolute;
-  width: 60px;
-  margin-top: 300px;
-  right: 60%;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  opacity: 0.07;
-  z-index: -999;
-}
-
-.menu-selector #crab-5 {
-  position: absolute;
-  width: 120px;
-  margin-top: 230px;
-  right: 80%;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  opacity: 0.07;
-  z-index: -999;
-}
-
 #menuBtnContainer {
   width: 90%;
   max-width: 1500px;
@@ -927,22 +879,6 @@ footer .footer-container .hours-container p {
   .left-side-bg {
     left: -50px;
   }
-  /* Menu Selector */
-  .menu-selector #crab-1 {
-    width: 350px;
-  }
-  .menu-selector #crab-2 {
-    margin-top: 450px;
-  }
-  .menu-selector #crab-3 {
-    margin-top: 420px;
-  }
-  .menu-selector #crab-4 {
-    margin-top: 450px;
-  }
-  .menu-selector #crab-5 {
-    margin-top: 400px;
-  }
   /* Burger Toggles */
   .nav-active {
     -webkit-transform: translateX(0%);
@@ -1014,24 +950,6 @@ footer .footer-container .hours-container p {
   }
   .menu-items .menu-item-container .menu-item-image {
     height: auto;
-  }
-  /* Menu Selector */
-  .menu-selector #crab-1 {
-    width: 300px;
-  }
-  .menu-selector #crab-2 {
-    width: 150px;
-    margin-top: 550px;
-    right: 0;
-  }
-  .menu-selector #crab-3 {
-    margin-top: 500px;
-  }
-  .menu-selector #crab-4 {
-    margin-top: 570px;
-  }
-  .menu-selector #crab-5 {
-    margin-top: 550px;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */

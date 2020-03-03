@@ -2,7 +2,7 @@
     font-family: 'Bodoni 72';
     src: url('/fonts/Bodoni\ 72.ttc');
 }
-@import url('https://fonts.googleapis.com/css?family=Lobster|Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Mali&display=swap');
 /* Global */
 $whiteText: #ffffff;
 $mainColor: #0B92E4;
@@ -22,7 +22,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Merriweather', serif;
+    font-family: 'Mali', cursive;
     overflow-x: hidden;
 }
 h1 {
@@ -182,6 +182,7 @@ p {
 /* Hero Section */
 .hero-bg {
     margin: 0 auto;
+    height: 700px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -247,10 +248,10 @@ p {
 }
 /* Background Images */
 .home-bg {
-    background-image: url("../images/las-marietas-islands.jpg");
+    background-image: url("../images/menu-hero-bg.jpg");
 }
 .menu-bg {
-    background-image: url("../images/menu-hero-bg.jpg");
+    background-image: url("../images/las-marietas-islands.jpg");
 }
 .contact-bg {
     background-image: url("../images/contact-hero-bg.jpg");
@@ -267,6 +268,7 @@ p {
 
 /* Welcome Section */
 .welcome-section {
+    margin: 300px auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -274,7 +276,8 @@ p {
         width: 550px;
     }
     .welcome-container {
-        margin-left: 50px;
+        width: 80%;
+        text-align: center;
         img {
             position: absolute;
             margin-top: -120px;
@@ -472,51 +475,6 @@ footer {
 }
 
 /* Menu Selector */
-.menu-selector {
-    #crab-1 {
-        position: absolute;
-        width: 250px;
-        opacity: 0.07;
-        z-index: -999;
-    }
-    #crab-2 {
-        position: absolute;
-        width: 150px;
-        margin-top: 250px;
-        right: 10%;
-        transform: scaleX(-1);
-        opacity: 0.07;
-        z-index: -999;
-    }
-    #crab-3 {
-        position: absolute;
-        width: 90px;
-        margin-top: 350px;
-        right: 40%;
-        transform: scaleX(-1);
-        opacity: 0.07;
-        z-index: -999;
-    }
-    #crab-4 {
-        position: absolute;
-        width: 60px;
-        margin-top: 300px;
-        right: 60%;
-        transform: scaleX(-1);
-        opacity: 0.07;
-        z-index: -999;
-    }
-    #crab-5 {
-        position: absolute;
-        width: 120px;
-        margin-top: 230px;
-        right: 80%;
-        transform: scaleX(-1);
-        opacity: 0.07;
-        z-index: -999;
-    }
-}
-
 #menuBtnContainer {
     width: 90%;
     max-width: 1500px;
@@ -761,25 +719,6 @@ footer {
     .left-side-bg {
         left: -50px;
     }
-
-    /* Menu Selector */
-    .menu-selector {
-        #crab-1 {
-            width: 350px;
-        }
-        #crab-2 {
-            margin-top: 450px;
-        }
-        #crab-3 {
-            margin-top: 420px;
-        }
-        #crab-4 {
-            margin-top: 450px;
-        }
-        #crab-5 {
-            margin-top: 400px;
-        }
-    }
     
     /* Burger Toggles */
     .nav-active {
@@ -839,26 +778,6 @@ footer {
             .menu-item-image {
                 height: auto;
             }
-        }
-    }
-    /* Menu Selector */
-    .menu-selector {
-        #crab-1 {
-            width: 300px;
-        }
-        #crab-2 {
-            width: 150px;
-            margin-top: 550px;
-            right: 0;
-        }
-        #crab-3 {
-            margin-top: 500px;
-        }
-        #crab-4 {
-            margin-top: 570px;
-        }
-        #crab-5 {
-            margin-top: 550px;
         }
     }
 }
