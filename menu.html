@@ -2,1578 +2,1692 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description"
-        content="Check out the entire menu or search by category. Stop by our restaurant at Salinas, CA." />
-    <link rel="shortcut icon" href="./images/IslasMarietasTransparentLogo.png" type="image/x-icon">
-    <title>Islas Marietas Restaurant - Mexican Food - Menu</title>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/stylesheet.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/4bc9f4da23.js" crossorigin="anonymous"></script>
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="./css/animate.css">
-    <!-- Google Translate -->
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description"
+		content="Check out the entire menu or search by category. Stop by our restaurant at Salinas, CA." />
+	<title>Islas Marietas Restaurant - Mexican Food - Menu</title>
+
+	<link rel="shortcut icon" href="./images/IslasMarietasTransparentLogo.png" type="image/x-icon">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="./images/IslasMarietasTransparentWebLogo.png"
+					alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item active"><a href="menu.html" class="nav-link">Menu</a></li>
+					<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
 
-    <!-- Hero Section -->
-    <div class="hero-bg menu-bg">
-        <div class="nav-links">
-            <ul>
-                <li class="animated fadeInUp">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="animated fadeInUp">
-                    <a href="menu.html" class="nav-link">Menu</a>
-                </li>
-                <img class="animated fadeInUp" src="./images/IslasMarietasTransparentWebLogo.png" alt="Logo">
-                <li class="animated fadeInUp">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-                <li class="animated fadeInUp">
-                    <a href="tel:8312726083" class="nav-link">Order</a>
-                </li>
-            </ul>
-        </div>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <div class="hero-header animated fadeInUp">
-            <img src="./images/IslasMarietasTransparentWebLogo.png" alt="Logo">
-            <h1>Look through our menu!</h1>
-            <div class="arrow-link">
-                <a href="tel:8312726083">
-                    <p>Order Now</p>
-                    <i class="fas fa-arrow-circle-right"></i>
-                </a>
-            </div>
-        </div>
-    </div>
+	<section class="home-slider owl-carousel img" style="background-image: url(images/bg_1.jpg);">
 
-    <!-- Control buttons -->
-    <div class="menu-selector headline-container section-container animated fadeInUp">
-        <h2>Menu</h2>
-        <p class="headline-text-container">Check out the entire menu or search by category.</p>
-    </div>
-    <div id="menuBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">Show all</button>
-        <button class="btn" onclick="filterSelection('01')">Breakfast</button>
-        <button class="btn" onclick="filterSelection('02')">Mexcian Platters</button>
-        <button class="btn" onclick="filterSelection('03')">La Carreta</button>
-        <button class="btn" onclick="filterSelection('04')">Pa’l@s Atrevid@s Botanas</button>
-        <button class="btn" onclick="filterSelection('05')">La Carreta del Mar</button>
-        <button class="btn" onclick="filterSelection('06')">Tostadas</button>
-        <button class="btn" onclick="filterSelection('07')">Platillos de la Isla</button>
-        <button class="btn" onclick="filterSelection('08')">Sushi</button>
-        <button class="btn" onclick="filterSelection('09')">Pa’ los Escuincles</button>
-        <button class="btn" onclick="filterSelection('10')">Sides</button>
-        <button class="btn" onclick="filterSelection('11')">Postres</button>
-        <button class="btn" onclick="filterSelection('12')">Beverages</button>
-    </div>
+		<div class="slider-item" style="background-image: url(images/bg_3.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text justify-content-center align-items-center">
 
-    <!-- 01 Breakfast -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 01 animated fadeInLeft">
-        <!-- Breakfast Background Image -->
-        <img src="./images/breakfast-bg.png" alt="Sliced Fruit" class="bg-image breakfast-bg">
-        <div class="number-heading">
-            <h2>01</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm">
-            <h4>Breakfast</h4>
-            <p>All breakfast platters are served with beans and potatoes.
-                <br>
-                Served from 10:30am to 2:00pm</p>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Marietas Breakfast.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Marietas Breakfast</h3>
-                        <h3 class="menu-price">$15.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Your choice of chicken or beef steak with red and green chilaquiles, topped with 2 eggs any
-                            style, sour cream and onions. (1 meat only)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Chilaquiles.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Chilaquiles</h3>
-                        <h3 class="menu-price">$9.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Sauteed tortilla chips with two eggs any style, potatoes, cheese, sour cream and onions. (Red
-                            or Green)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Huevos con Chorizo.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Huevos con Chorizo</h3>
-                        <h3 class="menu-price">$9.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Scrambled eggs with chorizo and potatoes.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- No Image Blocks -->
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Huevos con Hamon</h3>
-                        <h3 class="menu-price">$9.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Scrambled eggs with ham and potatoes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Huevos Rancheros</h3>
-                        <h3 class="menu-price">$9.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Scrambled eggs with ranchero sauce.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Breakfast Burrote</h3>
-                        <h3 class="menu-price">$6.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Eggs with ham or chorizo and potatoes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+					<div class="col-md-7 col-sm-12 text-center ftco-animate">
+						<h1 class="mb-3 mt-5 bread">Our Menu</h1>
+						<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Menu</span>
+						</p>
+					</div>
 
-    <!-- 02 Mexcian Platters -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 02 animated fadeInRight">
-        <!-- Mexcian Platters Background Image -->
-        <img src="./images/mexican-platters-bg.png" alt="Sliced Lemons" class="bg-image breakfast-bg left-side-bg">
-        <div class="number-heading right-headline">
-            <h2>02</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm right-headline">
-            <h4>Mexcian Platters</h4>
-            <p>All platters are served with tortillas, beans, rice and salad.</p>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/El Capricho.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">El Capricho</h3>
-                        <h3 class="menu-price">$15.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Chicken, beef, shrimp, chorizo, bacon, bell pepper, onions and cheese</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/MeatPlatter.png" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Meat Platter</h3>
-                        <h3 class="menu-price">$13.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Asada | Carnitas | Chicken | Bistec Ranchero</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Molcajete Ranchero.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Molcajete Ranchero</h3>
-                        <h3 class="menu-price">$29.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Beef, chicken, shrimp, pork and cheese. Does not come with rice and salad</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Cheese Enchiladas.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Cheese Enchiladas</h3>
-                        <h3 class="menu-price">$11.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Red or green sauce</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Mixed Fajitas.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Mixed Fajitas</h3>
-                        <h3 class="menu-price">$16.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Beef, chicken, and shrimp</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Super Nachos.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Super Nachos</h3>
-                        <h3 class="menu-price">$11.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Your choice of meat, pico de gallo, beans, sour, cream and cheese</p>
-                    </div>
-                </div>
-            </div>
-            <!-- No Image Blocks -->
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Fajitas</h3>
-                        <h3 class="menu-price">$13.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Beef or chicken fajitas</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Fajitas de Camaron</h3>
-                        <h3 class="menu-price">$15.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Shrimp fajitas</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Huaraches</h3>
-                        <h3 class="menu-price">$7.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Carne asada or chicken loaded with beans, lettuce, avocado, cheese and cream</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Chicken Enchiladas</h3>
-                        <h3 class="menu-price">$12.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Red or green sauce</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Chile Relleno</h3>
-                        <h3 class="menu-price">$11.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Stuffed chili</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Flautas de Pollo</h3>
-                        <h3 class="menu-price">$9.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>3 Chicken fried rolled tacos</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Tamales Platter</h3>
-                        <h3 class="menu-price">$10.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>2 Tamales with sour cream. Chicken | Pork | Cheese</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Asada Fries</h3>
-                        <h3 class="menu-price">$11.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Your choice of meat, pico de gallo, sour cream and cheese</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Burrito Mojado</h3>
-                        <h3 class="menu-price">$9.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Wet burrito</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- 03 La Carreta -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 03 animated fadeInLeft">
-        <!-- La Carreta Background Image -->
-        <img src="./images/palmtree.png" alt="Palm Tree" class="bg-image breakfast-bg flip-bg">
-        <div class="number-heading">
-            <h2>03</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm">
-            <h4>La Carreta</h4>
-            <p>Burritos | Tacos | Quesadillas<br>
-                Meat selection: Asada, carnitas, pastor, chicken</p>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Torta.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Torta</h3>
-                        <h3 class="menu-price">$8.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Carne Asada | Ham | Chicken | Carnitas<br>
-                            Lettuce, tomato, avocado, onions and sour cream, with fries on the side</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Torta Ahogada.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Torta Ahogada</h3>
-                        <h3 class="menu-price">$7.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Shredded pork sandwich sautéed in hot sauce onions on top</p>
-                    </div>
-                </div>
-            </div>
-            <!-- No Image Blocks -->
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Burrote</h3>
-                        <h3 class="menu-price">$7.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Choice of meat, beans, rice, cheese, avocado, sour cream and salsa pico de gallo</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Burrito</h3>
-                        <h3 class="menu-price">$6.49</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Choice of meat, cooked beans, and salsa pico de gallo</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Bean Burrito</h3>
-                        <h3 class="menu-price">$4.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Beans and cheese</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Super Veggie Burrito</h3>
-                        <h3 class="menu-price">$6.75</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Beans, rice, cheese, avocado, sour cream and salsa pico de gallo</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Veggie Burrito</h3>
-                        <h3 class="menu-price">$5.49</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Beans, rice and cheese</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Quesadilla</h3>
-                        <h3 class="menu-price">$2.50</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Cheese only</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Burrote Meat Only</h3>
-                        <h3 class="menu-price">$8.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Choice of meat, cheese, avocado, sour cream and salsa pico de gallo</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Tacote</h3>
-                        <h3 class="menu-price">$3.50</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Choice of meat, beans, cheese, avocado, sour cream and salsa pico de gallo</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Taco</h3>
-                        <h3 class="menu-price">$2.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Choice of meat, beans and salsa</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Quesadilla Deluxe</h3>
-                        <h3 class="menu-price">$7.49</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Choice of meat, cheese, avocado, sour cream and salsa pico de gallo</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<section class="ftco-section">
+		<!-- Breakfast -->
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4">Breakfast</h2>
+					<p>All breakfast platters are served with beans and potatoes. Served from 10:30am to 2:00pm</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/MarietasBreakfast.jpg);"></a>
+						<div class="text p-4">
+							<h3>Marietas Breakfast</h3>
+							<p>Your choice of chicken or beef steak with red and green chilaquiles, topped with 2 eggs
+								any style, sour cream and onions. (1 meat only)
+							</p>
+							<p class="price"><span>$15.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Chilaquiles.jpg);"></a>
+						<div class="text p-4">
+							<h3>Chilaquiles</h3>
+							<p>Sauteed tortilla chips with two eggs any style, potatoes, cheese, sour cream and onions.
+								(Red or Green)</p>
+							<p class="price"><span>$9.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/HuevosConChorizo.jpg);"></a>
+						<div class="text p-4">
+							<h3>Huevos con Chorizo</h3>
+							<p>Scrambled eggs with chorizo and potatoes.
+							</p>
+							<p class="price"><span>$9.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- 04 Pa’l@s Atrevid@s Botanas -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 04 animated fadeInRight">
-        <!-- Pa’l@s Atrevid@s Botanas Background Image -->
-        <img src="./images/atrevidos-botanas-bg.png" alt="Tree Leaves"
-            class="bg-image breakfast-bg left-side-bg flip-bg">
-        <div class="number-heading right-headline">
-            <h2>04</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm right-headline">
-            <h4>Pa’l@s Atrevid@s Botanas</h4>
-            <p>Served with tortillas or bread</p>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Patas de Jaiba.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Patas de Jaiba</h3>
-                        <h3 class="menu-price">$49.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Crab legs</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Alitas de Pollo.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Alitas de Pollo</h3>
-                        <h3 class="menu-price">$9.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Chicken wings, BBQ, or Buffalo</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Langosta al Veneno.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Langosta al Veneno</h3>
-                        <h3 class="menu-price">$84.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Our lobster recipe</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Pescado Sarandeado.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Pescado Sarandeado</h3>
-                        <h3 class="menu-price"></h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Ask for the price</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Empanadas de Camaron.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Empanadas de Camaron</h3>
-                        <h3 class="menu-price"></h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>(3) <strong>$7.91</strong> (6) <strong>$12.99</strong> (12) <strong>$23.99</strong></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Botana del Bombon.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Botana del Bombon</h3>
-                        <h3 class="menu-price">$64.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Fish fritters, shrimp</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Langostinos.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Langostinos</h3>
-                        <h3 class="menu-price">$49.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>A La Plancha | Al Ajo | A La Diabla |
-                            A La Cora</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Mejillones.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Mejillones</h3>
-                        <h3 class="menu-price"></h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>(6) <strong>$11.99</strong> (12) <strong>$19.99</strong> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Manny’s Botana.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Manny’s Botana</h3>
-                        <h3 class="menu-price">$64.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Crab legs, prawns, mussels, shrimp, fish</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Huevos con Hamon</span></h3>
+								<span class="price">$9.99</span>
+							</div>
+							<div class="d-block">
+								<p>Scrambled eggs with ham and potatoes.</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Huevos Rancheros</span></h3>
+								<span class="price">$9.99</span>
+							</div>
+							<div class="d-block">
+								<p>Scrambled eggs with ranchero sauce.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <!-- 05 La Carreta del Mar -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 05 animated fadeInLeft">
-        <!-- La Carreta del Mar Background Image -->
-        <img src="./images/carreta-del-mar.png" alt="Breakfast fruit" class="bg-image breakfast-bg">
-        <div class="number-heading">
-            <h2>05</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm">
-            <h4>La Carreta del Mar</h4>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Cocteles.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Cocteles</h3>
-                        <h3 class="menu-price"></h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Served with cucumber, tomato, onion and avocado. Camaron or Pulpo.
-                            (Regular) <strong>$13.99</strong> (Mix) <strong>$14.99</strong></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Copa Vitamina.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Copa Vitamina</h3>
-                        <h3 class="menu-price">$17.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Served with cucumber, tomato, onion and avocado. Camaron or Pulpo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Botana el Rey Nayar.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Botana el Rey Nayar</h3>
-                        <h3 class="menu-price">$49.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>6 Cervezas, camarones curtidos y cocidos</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Ostiones Preparados.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Ostiones Preparados</h3>
-                        <h3 class="menu-price">$27.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>12 Oysters with shrimp</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Aguachile Mixto.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Aguachile Mixto</h3>
-                        <h3 class="menu-price">$18.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Verde | Mulato<br>
-                            Mix of shrimp, imitation crab, abalone meat and octopus</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Ostiones Castigados.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Ostiones Castigados</h3>
-                        <h3 class="menu-price">$27.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Shots de clamato con ostion y camaron. 12 Oysters Nayarit Style</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Copa Mendiga.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Copa Mendiga</h3>
-                        <h3 class="menu-price">$17.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Served with cucumber, tomato, onion and avocado. Camaron or Pulpo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Aguachile.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Aguachile</h3>
-                        <h3 class="menu-price">$15.50</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Cured shrimp sautéed on green lemon sauce.<br>Verde | Mulato</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Michelada Botanera.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Michelada Botanera</h3>
-                        <h3 class="menu-price">$39.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>2 Micheladas with a side of mixed shrimp</p>
-                    </div>
-                </div>
-            </div>
-            <!-- No Image Blocks -->
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Ostiones en su Concha</h3>
-                        <h3 class="menu-price">$18.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>12 Regular Oysters</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Breakfast Burrote</span></h3>
+								<span class="price">$6.99</span>
+							</div>
+							<div class="d-block">
+								<p>Eggs with ham or chorizo and potatoes.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- 06 Tostadas -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 06 animated fadeInRight">
-        <!-- Tostadas Background Image -->
-        <img src="./images/tostadas-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
-        <div class="number-heading right-headline">
-            <h2>06</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm right-headline">
-            <h4>Tostadas</h4>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Tostada Mixta.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Tostada Mixta</h3>
-                        <h3 class="menu-price">$7.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Mixed fish, shrimp, octopus, and crab meat. (Fish Ceviche) <strong>$3.99</strong>
-                            (Octopus) <strong>$5.99</strong> (Shrimp) <strong>$5.49</strong></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Ensalada Botanera.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Ensalada Botanera</h3>
-                        <h3 class="menu-price"></h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Served with cucumber, tomato, onion and avocado.<br>
-                            (Shrimp) <strong>$19.99</strong></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Torre Marietas.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Torre Marietas</h3>
-                        <h3 class="menu-price">$26.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Cooked shrimp, raw shrimp, imitation crab, octopus, fish ceviche, scallops</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Ensalada Botanera Mixta.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Ensalada Botanera Mixta</h3>
-                        <h3 class="menu-price">$23.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Served with cucumber, tomato, onion and avocado.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- No Image Blocks -->
-            <!-- None -->
-        </div>
-    </div>
+		<!-- Mexcian Platters -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">Mexcian Platters</h2>
+					<p>All platters are served with tortillas, beans, rice and salad.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/ElCapricho.jpg);"></a>
+						<div class="text p-4">
+							<h3>El Capricho</h3>
+							<p>Chicken, beef, shrimp, chorizo, bacon, bell pepper, onions and cheese
+							</p>
+							<p class="price"><span>$15.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/MeatPlatter.png);"></a>
+						<div class="text p-4">
+							<h3>Meat Platter</h3>
+							<p>Asada | Carnitas | Chicken | Bistec Ranchero
+							</p>
+							<p class="price"><span>$13.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/MolcajeteRanchero.jpg);"></a>
+						<div class="text p-4">
+							<h3>Molcajete Ranchero</h3>
+							<p>Beef, chicken, shrimp, pork and cheese. Does not come with rice and salad
+							</p>
+							<p class="price"><span>$29.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/CheeseEnchiladas.jpg);"></a>
+						<div class="text p-4">
+							<h3>Cheese Enchiladas</h3>
+							<p>Red or green sauce
+							</p>
+							<p class="price"><span>$11.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/MixedFajitas.jpg);"></a>
+						<div class="text p-4">
+							<h3>Mixed Fajitas</h3>
+							<p>Beef, chicken, and shrimp
+							</p>
+							<p class="price"><span>$16.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/SuperNachos.jpg);"></a>
+						<div class="text p-4">
+							<h3>Super Nachos</h3>
+							<p>Your choice of meat, pico de gallo, beans, sour, cream and cheese
+							</p>
+							<p class="price"><span>$11.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- 07 Platillos de la Isla -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 07 animated fadeInLeft">
-        <!-- Platillos de la Isla Background Image -->
-        <img src="./images/platillos-isla-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg">
-        <div class="number-heading">
-            <h2>07</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm">
-            <h4>Platillos de la Isla</h4>
-            <p>Some plates include tortillas, French fries, rice and salad</p>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Sopa de Mariscos.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Sopa de Mariscos</h3>
-                        <h3 class="menu-price">$16.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Seafood Stew with shrimp, octopus, fish, imitation crab, abalone, mussels and prawns.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Mariscada Marietas.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Mariscada Marietas</h3>
-                        <h3 class="menu-price">$34.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Octopus, crab, fish, prawns, clams, mussels abalone and shrimp in a special sauce</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Platillo de Langostinos.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Platillo de Langostinos</h3>
-                        <h3 class="menu-price">$19.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Sauteed in hot sauce | Garlic Sauce |
-                            A la Cora Style | Grilled</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Mojarra Farita.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Mojarra Farita</h3>
-                        <h3 class="menu-price">$14.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Deep fried tilapia with rice, potatoes and salad</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Camarones a la Diabla.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Camarones a la Diabla</h3>
-                        <h3 class="menu-price">$15.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Served with rice, potatoes, and salad.
-                            Deviled | Garlic | Mexican</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Camarones Empanizados.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Camarones Empanizados</h3>
-                        <h3 class="menu-price">$15.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>(Botana) <strong>$17.99</strong> (Platillo) <strong>$19.99</strong></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Camarones Sarandeados.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Camarones Sarandeados</h3>
-                        <h3 class="menu-price"></h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>(Botana) <strong>$17.99</strong> (Platillo) <strong>$19.99</strong></p>
-                    </div>
-                </div>
-            </div>
-            <!-- No Image Blocks -->
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Filete de Pescado</h3>
-                        <h3 class="menu-price">$14.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Fish filet served with rice, potatoes and salad (Deviled | Garlic | Breaded | A la Cora)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Caldo de Pescado</h3>
-                        <h3 class="menu-price">$13.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Fish Soup</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Caldo de Camaron</h3>
-                        <h3 class="menu-price">$14.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Shrimp Soup</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Camarones a la Cora</h3>
-                        <h3 class="menu-price"></h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>(Botana) <strong>$17.99</strong> (Platillo) <strong>$19.99</strong></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Camarones a la Vallarta</h3>
-                        <h3 class="menu-price">$17.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Vallarta Style bacon wrapped shrimp served with salad and tortillas</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Chicharron de Pescado</h3>
-                        <h3 class="menu-price">$14.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Fish Fritters</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Tacos de Pescado</h3>
-                        <h3 class="menu-price">$10.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>3 Fish Tacos</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Tacos de Camaron</h3>
-                        <h3 class="menu-price">$14.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>3 Shrimp Tacos</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Fajitas</span></h3>
+								<span class="price">$13.99</span>
+							</div>
+							<div class="d-block">
+								<p>Beef or chicken fajitas</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Fajitas de Camaron</span></h3>
+								<span class="price">$15.99</span>
+							</div>
+							<div class="d-block">
+								<p>Shrimp fajitas</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Huaraches</span></h3>
+								<span class="price">$7.99</span>
+							</div>
+							<div class="d-block">
+								<p>Carne asada or chicken loaded with beans, lettuce, avocado, cheese and cream</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Chicken Enchiladas</span></h3>
+								<span class="price">$12.99</span>
+							</div>
+							<div class="d-block">
+								<p>Red or green sauce</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Chile Relleno</span></h3>
+								<span class="price">$11.99</span>
+							</div>
+							<div class="d-block">
+								<p>Stuffed chili</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <!-- 08 Sushi -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 08 animated fadeInRight">
-        <!-- Sushi Background Image -->
-        <img src="./images/sushi-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
-        <div class="number-heading right-headline">
-            <h2>08</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm right-headline">
-            <h4>Sushi</h4>
-            <p>Regular, Empanizado, Gratinado +$2</p>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Sushi de Aguachile.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Sushi de Aguachile</h3>
-                        <h3 class="menu-price">$19.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Cream cheese, cucumber, avocado, carrot, crab, cooked shrimp, aguachile on top</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/California Roll.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">California Roll</h3>
-                        <h3 class="menu-price">$12.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Cream cheese, cucumber, avocado, carrot, crab</p>
-                    </div>
-                </div>
-            </div>
-            <!-- No Image Blocks -->
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Cielo, Mar, y Tierra</h3>
-                        <h3 class="menu-price">$14.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Cream cheese, cucumber, avocado, chicken, beef, and shrimp</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Marietas Sushi</h3>
-                        <h3 class="menu-price">$14.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Cream cheese, cucumber, avocado, carrot, crab, and cooked shrimp</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Yakimeshi (El Nayarita)</h3>
-                        <h3 class="menu-price">$24.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Fried rice, beef, shrimp, cream cheese, chicken, and vegetables</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Flautas de Pollo</span></h3>
+								<span class="price">$9.99</span>
+							</div>
+							<div class="d-block">
+								<p>3 Chicken fried rolled tacos</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Tamales Platter</span></h3>
+								<span class="price">$10.99</span>
+							</div>
+							<div class="d-block">
+								<p>2 Tamales with sour cream. Chicken | Pork | Cheese</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Asada Fries</span></h3>
+								<span class="price">$11.99</span>
+							</div>
+							<div class="d-block">
+								<p>Your choice of meat, pico de gallo, sour cream and cheese</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Burrito Mojado</span></h3>
+								<span class="price">$9.99</span>
+							</div>
+							<div class="d-block">
+								<p>Wet burrito</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- 09 Pa’ los Escuincles -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 09 animated fadeInLeft">
-        <!-- Pa’ los Escuincles Background Image -->
-        <img src="./images/escuincles-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg">
-        <div class="number-heading">
-            <h2>09</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm">
-            <h4>Pa’ los Escuincles</h4>
-            <p>Kid’s Menu</p>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Chicken Nuggets.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Chicken Nuggets</h3>
-                        <h3 class="menu-price">$5.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>With French Fries</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Spaghetti.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Spaghetti</h3>
-                        <h3 class="menu-price">$5.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Pasta with red sauce</p>
-                    </div>
-                </div>
-            </div>
-            <!-- No Image Blocks -->
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Quesadilla</h3>
-                        <h3 class="menu-price">$5.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>With rice and beans</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Enchilada Plate</h3>
-                        <h3 class="menu-price">$5.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>With rice and beans</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Little Burrito</h3>
-                        <h3 class="menu-price">$3.29</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Bean and cheese</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- La Carreta -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">La Carreta</h2>
+					<p>Meat selection: Asada, carnitas, pastor, chicken</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Torta.jpg);"></a>
+						<div class="text p-4">
+							<h3>Torta</h3>
+							<p>Lettuce, tomato, avocado, onions and sour cream, with fries on the side. Carne Asada |
+								Ham | Chicken | Carnitas
+							</p>
+							<p class="price"><span>$8.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/TortaAhogada.jpg);"></a>
+						<div class="text p-4">
+							<h3>Torta Ahogada</h3>
+							<p>Shredded pork sandwich sautéed in hot sauce onions on top
+							</p>
+							<p class="price"><span>$7.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- 10 Sides -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 10 animated fadeInRight">
-        <!-- Sides Background Image -->
-        <img src="./images/sides-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
-        <div class="number-heading right-headline">
-            <h2>10</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm right-headline">
-            <h4>Sides</h4>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Beans.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Beans</h3>
-                        <h3 class="menu-price">$2.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Fries.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Fries</h3>
-                        <h3 class="menu-price">$3.79</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Chips and Salsa.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Chips and Salsa</h3>
-                        <h3 class="menu-price">$1.25</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Rice.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Rice</h3>
-                        <h3 class="menu-price">$2.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- No Image Blocks -->
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">3 Tortillas</h3>
-                        <h3 class="menu-price">$1.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Chips and Salsa (To Go)</h3>
-                        <h3 class="menu-price">$3.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Salad</h3>
-                        <h3 class="menu-price">$2.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Guacamole</h3>
-                        <h3 class="menu-price">$6.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Burrote</span></h3>
+								<span class="price">$7.99</span>
+							</div>
+							<div class="d-block">
+								<p>Choice of meat, beans, rice, cheese, avocado, sour cream and salsa pico de gallo.</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Burrito</span></h3>
+								<span class="price">$6.49</span>
+							</div>
+							<div class="d-block">
+								<p>Choice of meat, cooked beans, and salsa pico de gallo</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Bean Burrito</span></h3>
+								<span class="price">$4.99</span>
+							</div>
+							<div class="d-block">
+								<p>Beans and cheese</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Super Veggie Burrito</span></h3>
+								<span class="price">$6.75</span>
+							</div>
+							<div class="d-block">
+								<p>Beans, rice, cheese, avocado, sour cream and salsa pico de gallo</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Veggie Burrito</span></h3>
+								<span class="price">$5.49</span>
+							</div>
+							<div class="d-block">
+								<p>Beans, rice and cheese</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <!-- 11 Postres -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 11 animated fadeInLeft">
-        <!-- Postres Background Image -->
-        <img src="./images/sides-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg flip-bg leaf-ht">
-        <div class="number-heading">
-            <h2>11</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm">
-            <h4>Postres</h4>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Flan Mexicano.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Flan Mexicano</h3>
-                        <h3 class="menu-price">$4.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Ice Cream.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Ice Cream</h3>
-                        <h3 class="menu-price">$4.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Quesadilla</span></h3>
+								<span class="price">$2.50</span>
+							</div>
+							<div class="d-block">
+								<p>Cheese only</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Burrote Meat Only</span></h3>
+								<span class="price">$8.99</span>
+							</div>
+							<div class="d-block">
+								<p>Choice of meat, cheese, avocado, sour cream and salsa pico de gallo.</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Tacote</span></h3>
+								<span class="price">$3.50</span>
+							</div>
+							<div class="d-block">
+								<p>Choice of meat, beans, cheese, avocado, sour cream and salsa pico de gallo.</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Taco</span></h3>
+								<span class="price">$2.99</span>
+							</div>
+							<div class="d-block">
+								<p>Choice of meat, beans and salsa.</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Quesadilla Deluxe</span></h3>
+								<span class="price">$7.49</span>
+							</div>
+							<div class="d-block">
+								<p>Choice of meat, cheese, avocado, sour cream and salsa pico de gallo.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- 12 Beverages -->
-    <!-- Menu Section -->
-    <div class="section-container filterDiv 12 animated fadeInRight">
-        <!-- Beverages Background Image -->
-        <img src="./images/beverages-bg.png" alt="Breakfast fruit" class="bg-image breakfast-bg left-side-bg">
-        <div class="number-heading right-headline">
-            <h2>12</h2>
-            <div class="line"></div>
-        </div>
-        <div class="number-heading-title number-heading-bm right-headline">
-            <h4>Beverages</h4>
-        </div>
-        <div class="menu-items">
-            <!-- Image Blocks -->
-            <div class="menu-item-container">
-                <img src="./images/menu/Mangoneada.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Mangoneada</h3>
-                        <h3 class="menu-price">$11.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Michelada Marietas.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Michelada Marietas</h3>
-                        <h3 class="menu-price">$15.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p>Double michelada with shrimp</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container">
-                <img src="./images/menu/Coqueta Chelada.jpg" class="menu-item-image" alt="">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Coqueta Chelada</h3>
-                        <h3 class="menu-price">$17.99</h3>
-                    </div>
-                    <div class="menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <!-- No Image Blocks -->
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Refrescos de Lata</h3>
-                        <h3 class="menu-price">$1.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Canned sodas</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Refrescos de Botella</h3>
-                        <h3 class="menu-price">$2.85</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Bottled sodas</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Aguas Frescas</h3>
-                        <h3 class="menu-price">$3.50</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Flavored water</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Cafe</h3>
-                        <h3 class="menu-price">$2.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Coffee</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Jugo de Naranja</h3>
-                        <h3 class="menu-price">$2.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Orange Juice</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Jugo de Manzana</h3>
-                        <h3 class="menu-price">$2.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Apple Juice</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Te Helado</h3>
-                        <h3 class="menu-price">$2.49</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Iced Tea</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Cervezas</h3>
-                        <h3 class="menu-price">$5.00</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Beer</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Vino</h3>
-                        <h3 class="menu-price">$6.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Red Wine</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Cerveza Preparada</h3>
-                        <h3 class="menu-price">$6.50</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Cold beer with our special michelada sauce</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Michelada</h3>
-                        <h3 class="menu-price">$11.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Cold beer with our special michelada sauce</p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Sangria Preparada</h3>
-                        <h3 class="menu-price">$11.99</h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-item-container full-menu-item">
-                <div class="menu-item-info">
-                    <div class="menu-item-heading">
-                        <h3 class="menu-item">Cubetas</h3>
-                        <h3 class="menu-price"></h3>
-                    </div>
-                    <div class="full-menu-item-description">
-                        <p>Preparada - Regular</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- Pa’l@s Atrevid@s Botanas -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">Pa’l@s Atrevid@s Botanas</h2>
+					<p>Served with tortillas or bread</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/PatasDeJaiba.jpg);"></a>
+						<div class="text p-4">
+							<h3>Patas de Jaiba</h3>
+							<p>Crab legs</p>
+							<p class="price"><span>$49.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/AlitasDePollo.jpg);"></a>
+						<div class="text p-4">
+							<h3>Alitas de Pollo</h3>
+							<p>Chicken wings, BBQ, or Buffalo
+							</p>
+							<p class="price"><span>$9.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/LangostaAlVeneno.jpg);"></a>
+						<div class="text p-4">
+							<h3>Langosta al Veneno</h3>
+							<p>Our lobster recipe</p>
+							<p class="price"><span>$84.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/PescadoSarandeado.jpg);"></a>
+						<div class="text p-4">
+							<h3>Pescado Sarandeado</h3>
+							<p>Ask for the price</p>
+							<p class="price"><span>$---</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/EmpanadasDeCamaron.jpg);"></a>
+						<div class="text p-4">
+							<h3>Empanadas de Camaron</h3>
+							<p>(3) $7.91 (6) $12.99 (12) $23.99
+							</p>
+							<p class="price"><span>$---</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/BotanaDelBombon.jpg);"></a>
+						<div class="text p-4">
+							<h3>Botana del Bombon</h3>
+							<p>Fish fritters, shrimp
+							</p>
+							<p class="price"><span>$64.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Langostinos.jpg);"></a>
+						<div class="text p-4">
+							<h3>Langostinos</h3>
+							<p>A La Plancha | Al Ajo | A La Diabla | A La Cora
+							</p>
+							<p class="price"><span>$49.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Mejillones.jpg);"></a>
+						<div class="text p-4">
+							<h3>Mejillones</h3>
+							<p>(6) $11.99 (12) $19.99
+							</p>
+							<p class="price"><span>$---</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/MannysBotana.jpg);"></a>
+						<div class="text p-4">
+							<h3>Manny’s Botana</h3>
+							<p>Crab legs, prawns, mussels, shrimp, fish</p>
+							<p class="price"><span>$64.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Footer -->
-    <footer class="subfooter">
-        <div class="footer-container">
-            <p>Copyright ©2019 Islas Marietas Restaurant. Developed by <a href="https://www.samramirez.xyz/"
-                    target="_blank">Sam R.</a>
-            </p>
-            <div class="follow-icons">
-                <p>Follow Us:</p>
-                <a href="https://www.facebook.com/islasmarietasrestaurant/" target="_blank"><i
-                        class="fab fa-facebook fa-2x"></i></a>
-            </div>
-            <div id="google_translate_element"></div>
-        </div>
-    </footer>
+		<!-- La Carreta del Mar -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">La Carreta del Mar</h2>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Cocteles.jpg);"></a>
+						<div class="text p-4">
+							<h3>Cocteles</h3>
+							<p>Served with cucumber, tomato, onion and avocado. Camaron or Pulpo. (Regular) $13.99 (Mix)
+								$14.99
+							</p>
+							<p class="price"><span>$---</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/CopaVitamina.jpg);"></a>
+						<div class="text p-4">
+							<h3>Copa Vitamina</h3>
+							<p>Served with cucumber, tomato, onion and avocado. Camaron or Pulpo.
+							</p>
+							<p class="price"><span>$17.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/BotanaElReyNayar.jpg);"></a>
+						<div class="text p-4">
+							<h3>Botana el Rey Nayar</h3>
+							<p>6 Cervezas, camarones curtidos y cocidos
+							</p>
+							<p class="price"><span>$49.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/OstionesPreparados.jpg);"></a>
+						<div class="text p-4">
+							<h3>Ostiones Preparados</h3>
+							<p>12 Oysters with shrimp
+							</p>
+							<p class="price"><span>$27.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/AguachileMixto.jpg);"></a>
+						<div class="text p-4">
+							<h3>Aguachile Mixto</h3>
+							<p>Mix of shrimp, imitation crab, abalone meat and octopus. Verde | Mulato
+							</p>
+							<p class="price"><span>$18.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/OstionesCastigados.jpg);"></a>
+						<div class="text p-4">
+							<h3>Ostiones Castigados</h3>
+							<p>Shots de clamato con ostion y camaron. 12 Oysters Nayarit Style.
+							</p>
+							<p class="price"><span>$27.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/CopaMendiga.jpg);"></a>
+						<div class="text p-4">
+							<h3>Copa Mendiga</h3>
+							<p>Served with cucumber, tomato, onion and avocado. Camaron or Pulpo.
+							</p>
+							<p class="price"><span>$17.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Aguachile.jpg);"></a>
+						<div class="text p-4">
+							<h3>Aguachile</h3>
+							<p>Cured shrimp sautéed on green lemon sauce. Verde | Mulato
+							</p>
+							<p class="price"><span>$15.50</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/MicheladaBotanera.jpg);"></a>
+						<div class="text p-4">
+							<h3>Michelada Botanera</h3>
+							<p>2 Micheladas with a side of mixed shrimp.
+							</p>
+							<p class="price"><span>$39.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Javascript Source Code -->
-    <script src="./javascript/app.js"></script>
-    <script src="./javascript/menu_selector.js"></script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-        }
-    </script>
-    <script src="./javascript/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Ostiones en su Concha</span></h3>
+								<span class="price">$18.99</span>
+							</div>
+							<div class="d-block">
+								<p>12 Regular Oysters.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Tostadas -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">Tostadas</h2>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/TostadaMixta.jpg);"></a>
+						<div class="text p-4">
+							<h3>Tostada Mixta</h3>
+							<p>Mixed fish, shrimp, octopus, and crab meat. (Fish Ceviche) $3.99 (Octopus) $5.99 (Shrimp)
+								$5.49
+							</p>
+							<p class="price"><span>$7.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/EnsaladaBotanera.jpg);"></a>
+						<div class="text p-4">
+							<h3>Ensalada Botanera</h3>
+							<p>Served with cucumber, tomato, onion and avocado. (Shrimp) $19.99
+							</p>
+							<p class="price"><span>$---</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/TorreMarietas.jpg);"></a>
+						<div class="text p-4">
+							<h3>Torre Marietas</h3>
+							<p>Cooked shrimp, raw shrimp, imitation crab, octopus, fish ceviche, scallops.
+							</p>
+							<p class="price"><span>$26.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img"
+							style="background-image: url(images/menu/EnsaladaBotaneraMixta.jpg);"></a>
+						<div class="text p-4">
+							<h3>Ensalada Botanera Mixta</h3>
+							<p>Served with cucumber, tomato, onion and avocado.
+							</p>
+							<p class="price"><span>$23.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Platillos de la Isla -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">Platillos de la Isla</h2>
+					<p>Some plates include tortillas, French fries, rice and salad</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/SopaDeMariscos.jpg);"></a>
+						<div class="text p-4">
+							<h3>Sopa de Mariscos</h3>
+							<p>Seafood Stew with shrimp, octopus, fish, imitation crab, abalone, mussels and prawns.
+							</p>
+							<p class="price"><span>$16.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/MariscadaMarietas.jpg);"></a>
+						<div class="text p-4">
+							<h3>Mariscada Marietas</h3>
+							<p>Octopus, crab, fish, prawns, clams, mussels abalone and shrimp in a special sauce.
+							</p>
+							<p class="price"><span>$34.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img"
+							style="background-image: url(images/menu/PlatilloDeLangostinos.jpg);"></a>
+						<div class="text p-4">
+							<h3>Platillo de Langostinos</h3>
+							<p>Sauteed in hot sauce | Garlic Sauce | A la Cora Style | Grilled
+							</p>
+							<p class="price"><span>$19.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/MojarraFarita.jpg);"></a>
+						<div class="text p-4">
+							<h3>Mojarra Farita</h3>
+							<p>Deep fried tilapia with rice, potatoes and salad.
+							</p>
+							<p class="price"><span>$14.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/CamaronesALaDiabla.jpg);"></a>
+						<div class="text p-4">
+							<h3>Camarones a la Diabla</h3>
+							<p>Served with rice, potatoes, and salad. Deviled | Garlic | Mexican
+							</p>
+							<p class="price"><span>$15.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img"
+							style="background-image: url(images/menu/CamaronesEmpanizados.jpg);"></a>
+						<div class="text p-4">
+							<h3>Camarones Empanizados</h3>
+							<p>(Botana) $17.99 (Platillo) $19.99
+							</p>
+							<p class="price"><span>$15.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img"
+							style="background-image: url(images/menu/CamaronesSarandeados.jpg);"></a>
+						<div class="text p-4">
+							<h3>Camarones Sarandeados</h3>
+							<p>(Botana) $17.99 (Platillo) $19.99
+							</p>
+							<p class="price"><span>$---</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Filete de Pescado</span></h3>
+								<span class="price">$14.99</span>
+							</div>
+							<div class="d-block">
+								<p>Fish filet served with rice, potatoes and salad (Deviled | Garlic | Breaded | A la
+									Cora)</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Caldo de Pescado</span></h3>
+								<span class="price">$13.99</span>
+							</div>
+							<div class="d-block">
+								<p>Fish Soup</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Caldo de Camaron</span></h3>
+								<span class="price">$14.99</span>
+							</div>
+							<div class="d-block">
+								<p>Shrimp Soup</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Camarones a la Cora</span></h3>
+								<span class="price">$---</span>
+							</div>
+							<div class="d-block">
+								<p>(Botana) $17.99 (Platillo) $19.99</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Camarones a la Vallarta</span></h3>
+								<span class="price">$17.99</span>
+							</div>
+							<div class="d-block">
+								<p>Vallarta Style bacon wrapped shrimp served with salad and tortillas.</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Chicharron de Pescado</span></h3>
+								<span class="price">$14.99</span>
+							</div>
+							<div class="d-block">
+								<p>Fish Fritters</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Tacos de Pescado</span></h3>
+								<span class="price">$10.99</span>
+							</div>
+							<div class="d-block">
+								<p>3 Fish Tacos</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Tacos de Camaron</span></h3>
+								<span class="price">$14.99</span>
+							</div>
+							<div class="d-block">
+								<p>3 Shrimp Tacos</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sushi -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">Sushi</h2>
+					<p>Regular, Empanizado, Gratinado +$2</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/SushiDeAguachile.jpg);"></a>
+						<div class="text p-4">
+							<h3>Sushi de Aguachile</h3>
+							<p>Cream cheese, cucumber, avocado, carrot, crab, cooked shrimp, aguachile on top
+							</p>
+							<p class="price"><span>$19.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/CaliforniaRoll.jpg);"></a>
+						<div class="text p-4">
+							<h3>California Roll</h3>
+							<p>Cream cheese, cucumber, avocado, carrot, crab
+							</p>
+							<p class="price"><span>$12.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Cielo, Mar, y Tierra</span></h3>
+								<span class="price">$14.99</span>
+							</div>
+							<div class="d-block">
+								<p>Cream cheese, cucumber, avocado, chicken, beef, and shrimp</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Marietas Sushi</span></h3>
+								<span class="price">$14.99</span>
+							</div>
+							<div class="d-block">
+								<p>Cream cheese, cucumber, avocado, carrot, crab, and cooked shrimp</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Yakimeshi (El Nayarita)</span></h3>
+								<span class="price">$24.99</span>
+							</div>
+							<div class="d-block">
+								<p>Fried rice, beef, shrimp, cream cheese, chicken, and vegetables</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Pa’ los Escuincles -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">Pa’ los Escuincles</h2>
+					<p>Kid’s Menu</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/ChickenNuggets.jpg);"></a>
+						<div class="text p-4">
+							<h3>Chicken Nuggets</h3>
+							<p>With French Fries
+							</p>
+							<p class="price"><span>$5.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Spaghetti.jpg);"></a>
+						<div class="text p-4">
+							<h3>Spaghetti</h3>
+							<p>Pasta with red sauce
+							</p>
+							<p class="price"><span>$5.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Quesadilla</span></h3>
+								<span class="price">$5.99</span>
+							</div>
+							<div class="d-block">
+								<p>With rice and beans</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Enchilada Plate</span></h3>
+								<span class="price">$5.99</span>
+							</div>
+							<div class="d-block">
+								<p>With rice and beans</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Little Burrito</span></h3>
+								<span class="price">$3.29</span>
+							</div>
+							<div class="d-block">
+								<p>Bean and cheese</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sides -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">Sides</h2>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Beans.jpg);"></a>
+						<div class="text p-4">
+							<h3>Beans</h3>
+							<p></p>
+							<p class="price"><span>$2.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Fries.jpg);"></a>
+						<div class="text p-4">
+							<h3>Fries</h3>
+							<p></p>
+							<p class="price"><span>$3.79</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/ChipsAndSalsa.jpg);"></a>
+						<div class="text p-4">
+							<h3>Chips and Salsa</h3>
+							<p></p>
+							<p class="price"><span>$1.25</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Rice.jpg);"></a>
+						<div class="text p-4">
+							<h3>Rice</h3>
+							<p></p>
+							<p class="price"><span>$2.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>3 Tortillas</span></h3>
+								<span class="price">$1.99</span>
+							</div>
+							<div class="d-block">
+								<p>Side Dish</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Chips and Salsa (To Go)</span></h3>
+								<span class="price">$3.99</span>
+							</div>
+							<div class="d-block">
+								<p>Side Dish</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Salad</span></h3>
+								<span class="price">$2.99</span>
+							</div>
+							<div class="d-block">
+								<p>Side Dish</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Guacamole</span></h3>
+								<span class="price">$6.99</span>
+							</div>
+							<div class="d-block">
+								<p>Side Dish</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Postres -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">Postres</h2>
+					<p>Meat selection: Asada, carnitas, pastor, chicken</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/FlanMexicano.jpg);"></a>
+						<div class="text p-4">
+							<h3>Flan Mexicano</h3>
+							<p></p>
+							<p class="price"><span>$4.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/IceCream.jpg);"></a>
+						<div class="text p-4">
+							<h3>Ice Cream</h3>
+							<p></p>
+							<p class="price"><span>$4.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Beverages -->
+		<div class="container mt-5">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4 mt-5">Beverages</h2>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/Mangoneada.jpg);"></a>
+						<div class="text p-4">
+							<h3>Mangoneada</h3>
+							<p></p>
+							<p class="price"><span>$11.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/MicheladaMarietas.jpg);"></a>
+						<div class="text p-4">
+							<h3>Michelada Marietas</h3>
+							<p>Double michelada with shrimp</p>
+							<p class="price"><span>$15.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(images/menu/CoquetaChelada.jpg);"></a>
+						<div class="text p-4">
+							<h3>Coqueta Chelada</h3>
+							<p></p>
+							<p class="price"><span>$17.99</span> <a href="#"
+									class="ml-2 btn btn-white btn-outline-white">Order</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Refrescos de Lata</span></h3>
+								<span class="price">$1.99</span>
+							</div>
+							<div class="d-block">
+								<p>Canned sodas</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Refrescos de Botella</span></h3>
+								<span class="price">$2.85</span>
+							</div>
+							<div class="d-block">
+								<p>Bottled sodas</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Aguas Frescas</span></h3>
+								<span class="price">$3.50</span>
+							</div>
+							<div class="d-block">
+								<p>Flavored water</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Cafe</span></h3>
+								<span class="price">$2.99</span>
+							</div>
+							<div class="d-block">
+								<p>Coffee</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Jugo de Naranja</span></h3>
+								<span class="price">$2.99</span>
+							</div>
+							<div class="d-block">
+								<p>Orange Juice</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Jugo de Manzana</span></h3>
+								<span class="price">$2.99</span>
+							</div>
+							<div class="d-block">
+								<p>Apple Juice</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Te Helado</span></h3>
+								<span class="price">$2.49</span>
+							</div>
+							<div class="d-block">
+								<p>Iced Tea</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Cervezas</span></h3>
+								<span class="price">$5.00</span>
+							</div>
+							<div class="d-block">
+								<p>Beer</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Vino</span></h3>
+								<span class="price">$6.99</span>
+							</div>
+							<div class="d-block">
+								<p>Red Wine</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Cerveza Preparada</span></h3>
+								<span class="price">$6.50</span>
+							</div>
+							<div class="d-block">
+								<p>Cold beer with our special michelada sauce</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Michelada</span></h3>
+								<span class="price">$11.99</span>
+							</div>
+							<div class="d-block">
+								<p>Cold beer with our special michelada sauce</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Sangria Preparada</span></h3>
+								<span class="price">$11.99</span>
+							</div>
+							<div class="d-block">
+								<p>Prepared Sangria</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(images/food-icon.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Cubetas</span></h3>
+								<span class="price">$---</span>
+							</div>
+							<div class="d-block">
+								<p>Preparada - Regular</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="ftco-footer ftco-section img">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-lg-8 col-md-6 mb-5 mb-md-5">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">About Us</h2>
+						<p>We offer 100% authentic Mexican food with friendly hospitality. We make the richest flavored
+							and seasoned foods from our special tradition of seafood.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="https://www.facebook.com/islasmarietasrestaurant"
+									target="_blank"><span class="icon-facebook"></span></a>
+							</li>
+							<li class="ftco-animate"><a href="https://www.yelp.com/biz/islas-marietas-salinas"
+									target="_blank"><span class="icon-yelp"></span></a>
+							</li>
+							<li class="ftco-animate"><a
+									href="https://www.tripadvisor.com/Restaurant_Review-g33002-d11868774-Reviews-Islas_Marietas_Restaurant-Salinas_California.html"
+									target="_blank"><span class="icon-tripadvisor"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-5 mb-md-5">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have any questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><a
+										href="https://www.google.com/maps/place/Islas+Marietas+Restaurant/@36.6730118,-121.6572026,17z/data=!3m1!4b1!4m5!3m4!1s0x808df8ea6a269047:0xf43eb6817a91ee98!8m2!3d36.6730118!4d-121.6550139"><span
+											class="icon icon-map-marker"></span><span class="text">330 Main
+											St. Salinas CA, 93901</span></a></li>
+								<li><a href="tel:8312726083"><span class="icon icon-phone"></span><span
+											class="text">(831) 272 - 6083</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p>
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed by <a
+							href="https://www.samramirez.xyz/" target="_blank">Sam
+							R.</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" /></svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 
 </html>
